@@ -41,11 +41,6 @@ CMakeFiles/Odrive_protocol.elf.dir/USB_DEVICE/App/usbd_cdc_if.c.obj: \
  d:\stm32_dk\gcc-arm-none-eabi\arm-none-eabi\include\sys\_locale.h \
  d:\stm32_dk\gcc-arm-none-eabi\arm-none-eabi\include\strings.h \
  d:\stm32_dk\gcc-arm-none-eabi\arm-none-eabi\include\sys\string.h \
- E:\project\24-3-15-Odrive_protocol\Odrive_protocol\Core\Inc/main.h \
- E:\project\24-3-15-Odrive_protocol\Odrive_protocol\Drivers\STM32F4xx_HAL_Driver\Inc/stm32f4xx_hal.h \
- E:\project\24-3-15-Odrive_protocol\Odrive_protocol\Core\Inc/stm32f4xx_hal_conf.h \
- E:\project\24-3-15-Odrive_protocol\Odrive_protocol\Drivers\STM32F4xx_HAL_Driver\Inc/stm32f4xx_hal_rcc.h \
- E:\project\24-3-15-Odrive_protocol\Odrive_protocol\Drivers\STM32F4xx_HAL_Driver\Inc/stm32f4xx_hal_def.h \
  E:\project\24-3-15-Odrive_protocol\Odrive_protocol\Drivers\CMSIS\Device\ST\STM32F4xx\Include/stm32f4xx.h \
  E:\project\24-3-15-Odrive_protocol\Odrive_protocol\Drivers\CMSIS\Device\ST\STM32F4xx\Include/stm32f411xe.h \
  E:\project\24-3-15-Odrive_protocol\Odrive_protocol\Drivers\CMSIS\Include/core_cm4.h \
@@ -57,6 +52,10 @@ CMakeFiles/Odrive_protocol.elf.dir/USB_DEVICE/App/usbd_cdc_if.c.obj: \
  E:\project\24-3-15-Odrive_protocol\Odrive_protocol\Drivers\CMSIS\Include/cmsis_gcc.h \
  E:\project\24-3-15-Odrive_protocol\Odrive_protocol\Drivers\CMSIS\Include/mpu_armv7.h \
  E:\project\24-3-15-Odrive_protocol\Odrive_protocol\Drivers\CMSIS\Device\ST\STM32F4xx\Include/system_stm32f4xx.h \
+ E:\project\24-3-15-Odrive_protocol\Odrive_protocol\Drivers\STM32F4xx_HAL_Driver\Inc/stm32f4xx_hal.h \
+ E:\project\24-3-15-Odrive_protocol\Odrive_protocol\Core\Inc/stm32f4xx_hal_conf.h \
+ E:\project\24-3-15-Odrive_protocol\Odrive_protocol\Drivers\STM32F4xx_HAL_Driver\Inc/stm32f4xx_hal_rcc.h \
+ E:\project\24-3-15-Odrive_protocol\Odrive_protocol\Drivers\STM32F4xx_HAL_Driver\Inc/stm32f4xx_hal_def.h \
  E:\project\24-3-15-Odrive_protocol\Odrive_protocol\Drivers\STM32F4xx_HAL_Driver\Inc/Legacy/stm32_hal_legacy.h \
  E:\project\24-3-15-Odrive_protocol\Odrive_protocol\Drivers\STM32F4xx_HAL_Driver\Inc/stm32f4xx_hal_rcc_ex.h \
  E:\project\24-3-15-Odrive_protocol\Odrive_protocol\Drivers\STM32F4xx_HAL_Driver\Inc/stm32f4xx_hal_gpio.h \
@@ -78,4 +77,17 @@ CMakeFiles/Odrive_protocol.elf.dir/USB_DEVICE/App/usbd_cdc_if.c.obj: \
  E:\project\24-3-15-Odrive_protocol\Odrive_protocol\Drivers\STM32F4xx_HAL_Driver\Inc/stm32f4xx_hal_pcd_ex.h \
  E:\project\24-3-15-Odrive_protocol\Odrive_protocol\Middlewares\ST\STM32_USB_Device_Library\Core\Inc/usbd_core.h \
  E:\project\24-3-15-Odrive_protocol\Odrive_protocol\Middlewares\ST\STM32_USB_Device_Library\Core\Inc/usbd_ioreq.h \
- E:\project\24-3-15-Odrive_protocol\Odrive_protocol\Middlewares\ST\STM32_USB_Device_Library\Core\Inc/usbd_ctlreq.h
+ E:\project\24-3-15-Odrive_protocol\Odrive_protocol\Middlewares\ST\STM32_USB_Device_Library\Core\Inc/usbd_ctlreq.h \
+ E:\project\24-3-15-Odrive_protocol\Odrive_protocol\Middlewares\Third_Party\FreeRTOS\Source\CMSIS_RTOS_V2/cmsis_os.h \
+ E:\project\24-3-15-Odrive_protocol\Odrive_protocol\Middlewares\Third_Party\FreeRTOS\Source\include/FreeRTOS.h \
+ E:\project\24-3-15-Odrive_protocol\Odrive_protocol\Core\Inc/FreeRTOSConfig.h \
+ E:\project\24-3-15-Odrive_protocol\Odrive_protocol\Middlewares\Third_Party\FreeRTOS\Source\include/projdefs.h \
+ E:\project\24-3-15-Odrive_protocol\Odrive_protocol\Middlewares\Third_Party\FreeRTOS\Source\include/portable.h \
+ E:\project\24-3-15-Odrive_protocol\Odrive_protocol\Middlewares\Third_Party\FreeRTOS\Source\include/deprecated_definitions.h \
+ E:\project\24-3-15-Odrive_protocol\Odrive_protocol\Middlewares\Third_Party\FreeRTOS\Source\portable\GCC\ARM_CM4F/portmacro.h \
+ E:\project\24-3-15-Odrive_protocol\Odrive_protocol\Middlewares\Third_Party\FreeRTOS\Source\include/mpu_wrappers.h \
+ E:\project\24-3-15-Odrive_protocol\Odrive_protocol\Middlewares\Third_Party\FreeRTOS\Source\include/task.h \
+ E:\project\24-3-15-Odrive_protocol\Odrive_protocol\Middlewares\Third_Party\FreeRTOS\Source\include/list.h \
+ E:\project\24-3-15-Odrive_protocol\Odrive_protocol\Middlewares\Third_Party\FreeRTOS\Source\CMSIS_RTOS_V2/cmsis_os2.h \
+ E:\project\24-3-15-Odrive_protocol\Odrive_protocol\Src\UserApp/freertos_inc.h \
+ E:\project\24-3-15-Odrive_protocol\Odrive_protocol\Src\Bsp\communication/interface_usb.hpp

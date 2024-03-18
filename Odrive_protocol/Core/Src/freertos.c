@@ -25,7 +25,8 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-
+#include "common_inc.h"
+#include "communication.hpp"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -45,7 +46,12 @@
 
 /* Private variables ---------------------------------------------------------*/
 /* USER CODE BEGIN Variables */
-
+// List of semaphores
+osSemaphoreId sem_usb_irq;
+osSemaphoreId sem_uart1_dma;
+osSemaphoreId sem_uart2_dma;
+osSemaphoreId sem_usb_rx;
+osSemaphoreId sem_usb_tx;
 /* USER CODE END Variables */
 /* Definitions for defaultTask */
 osThreadId_t defaultTaskHandle;
@@ -80,7 +86,22 @@ void MX_FREERTOS_Init(void) {
   /* USER CODE END RTOS_MUTEX */
 
   /* USER CODE BEGIN RTOS_SEMAPHORES */
-  /* add semaphores, ... */
+    osSemaphoreDef(sem_usb_irq);
+    sem_usb_irq = osSemaphoreNew(1, 0, osSemaphore(sem_usb_irq));
+
+    // Create a semaphore for UART DMA and remove a token
+    osSemaphoreDef(sem_uart1_dma);
+    sem_uart1_dma = osSemaphoreNew(1, 1, osSemaphore(sem_uart1_dma));
+    osSemaphoreDef(sem_uart2_dma);
+    sem_uart2_dma = osSemaphoreNew(1, 1, osSemaphore(sem_uart2_dma));
+
+    // Create a semaphore for USB RX, and start with no tokens by removing the starting one.
+    osSemaphoreDef(sem_usb_rx);
+    sem_usb_rx = osSemaphoreNew(1, 0, osSemaphore(sem_usb_rx));
+
+    // Create a semaphore for USB TX
+    osSemaphoreDef(sem_usb_tx);
+    sem_usb_tx = osSemaphoreNew(1, 1, osSemaphore(sem_usb_tx));
   /* USER CODE END RTOS_SEMAPHORES */
 
   /* USER CODE BEGIN RTOS_TIMERS */
@@ -117,11 +138,9 @@ void StartDefaultTask(void *argument)
   /* init code for USB_DEVICE */
   MX_USB_DEVICE_Init();
   /* USER CODE BEGIN StartDefaultTask */
+    Main();
   /* Infinite loop */
-  for(;;)
-  {
-    osDelay(1);
-  }
+    vTaskDelete(defaultTaskHandle);
   /* USER CODE END StartDefaultTask */
 }
 

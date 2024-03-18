@@ -95,7 +95,13 @@ CMakeFiles/Odrive_protocol.elf.dir/Core/Src/freertos.c.obj: ../Core/Src/freertos
   ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_usb.h \
   ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pcd_ex.h \
   ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os.h \
-  ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.h
+  ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.h \
+  ../Src/UserApp/common_inc.h \
+  ../Src/UserApp/freertos_inc.h \
+  ../Src/Bsp/utils/time_utils.h \
+  ../Core/Inc/gpio.h \
+  ../Core/Inc/main.h \
+  ../Src/Bsp/communication/communication.hpp
 
 CMakeFiles/Odrive_protocol.elf.dir/Core/Src/gpio.c.obj: ../Core/Src/gpio.c \
   ../Core/Inc/gpio.h \
@@ -1306,11 +1312,6 @@ CMakeFiles/Odrive_protocol.elf.dir/Middlewares/ST/STM32_USB_Device_Library/Class
   D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/sys/_locale.h \
   D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/strings.h \
   D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/sys/string.h \
-  ../Core/Inc/main.h \
-  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h \
-  ../Core/Inc/stm32f4xx_hal_conf.h \
-  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h \
-  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h \
   ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h \
   ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f411xe.h \
   ../Drivers/CMSIS/Include/core_cm4.h \
@@ -1322,6 +1323,10 @@ CMakeFiles/Odrive_protocol.elf.dir/Middlewares/ST/STM32_USB_Device_Library/Class
   ../Drivers/CMSIS/Include/cmsis_gcc.h \
   ../Drivers/CMSIS/Include/mpu_armv7.h \
   ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/system_stm32f4xx.h \
+  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h \
+  ../Core/Inc/stm32f4xx_hal_conf.h \
+  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h \
+  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h \
   ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h \
   ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h \
   ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h \
@@ -1344,7 +1349,21 @@ CMakeFiles/Odrive_protocol.elf.dir/Middlewares/ST/STM32_USB_Device_Library/Class
   ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h \
   ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ioreq.h \
   ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ctlreq.h \
-  ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ctlreq.h
+  ../USB_DEVICE/App/usbd_desc.h \
+  ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_def.h \
+  ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ctlreq.h \
+  ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os.h \
+  ../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h \
+  ../Core/Inc/FreeRTOSConfig.h \
+  ../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h \
+  ../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h \
+  ../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h \
+  ../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/portmacro.h \
+  ../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h \
+  ../Middlewares/Third_Party/FreeRTOS/Source/include/task.h \
+  ../Middlewares/Third_Party/FreeRTOS/Source/include/list.h \
+  ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.h \
+  ../Src/UserApp/freertos_inc.h
 
 CMakeFiles/Odrive_protocol.elf.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.c.obj: ../Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.c \
   ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h \
@@ -1385,11 +1404,6 @@ CMakeFiles/Odrive_protocol.elf.dir/Middlewares/ST/STM32_USB_Device_Library/Core/
   D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/sys/_locale.h \
   D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/strings.h \
   D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/sys/string.h \
-  ../Core/Inc/main.h \
-  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h \
-  ../Core/Inc/stm32f4xx_hal_conf.h \
-  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h \
-  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h \
   ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h \
   ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f411xe.h \
   ../Drivers/CMSIS/Include/core_cm4.h \
@@ -1401,6 +1415,10 @@ CMakeFiles/Odrive_protocol.elf.dir/Middlewares/ST/STM32_USB_Device_Library/Core/
   ../Drivers/CMSIS/Include/cmsis_gcc.h \
   ../Drivers/CMSIS/Include/mpu_armv7.h \
   ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/system_stm32f4xx.h \
+  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h \
+  ../Core/Inc/stm32f4xx_hal_conf.h \
+  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h \
+  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h \
   ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h \
   ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h \
   ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h \
@@ -1465,11 +1483,6 @@ CMakeFiles/Odrive_protocol.elf.dir/Middlewares/ST/STM32_USB_Device_Library/Core/
   D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/sys/_locale.h \
   D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/strings.h \
   D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/sys/string.h \
-  ../Core/Inc/main.h \
-  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h \
-  ../Core/Inc/stm32f4xx_hal_conf.h \
-  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h \
-  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h \
   ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h \
   ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f411xe.h \
   ../Drivers/CMSIS/Include/core_cm4.h \
@@ -1481,6 +1494,10 @@ CMakeFiles/Odrive_protocol.elf.dir/Middlewares/ST/STM32_USB_Device_Library/Core/
   ../Drivers/CMSIS/Include/cmsis_gcc.h \
   ../Drivers/CMSIS/Include/mpu_armv7.h \
   ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/system_stm32f4xx.h \
+  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h \
+  ../Core/Inc/stm32f4xx_hal_conf.h \
+  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h \
+  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h \
   ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h \
   ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h \
   ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h \
@@ -1545,11 +1562,6 @@ CMakeFiles/Odrive_protocol.elf.dir/Middlewares/ST/STM32_USB_Device_Library/Core/
   D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/sys/_locale.h \
   D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/strings.h \
   D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/sys/string.h \
-  ../Core/Inc/main.h \
-  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h \
-  ../Core/Inc/stm32f4xx_hal_conf.h \
-  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h \
-  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h \
   ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h \
   ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f411xe.h \
   ../Drivers/CMSIS/Include/core_cm4.h \
@@ -1561,6 +1573,10 @@ CMakeFiles/Odrive_protocol.elf.dir/Middlewares/ST/STM32_USB_Device_Library/Core/
   ../Drivers/CMSIS/Include/cmsis_gcc.h \
   ../Drivers/CMSIS/Include/mpu_armv7.h \
   ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/system_stm32f4xx.h \
+  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h \
+  ../Core/Inc/stm32f4xx_hal_conf.h \
+  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h \
+  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h \
   ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h \
   ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h \
   ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h \
@@ -1941,6 +1957,1679 @@ CMakeFiles/Odrive_protocol.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/timer
   ../Middlewares/Third_Party/FreeRTOS/Source/include/task.h \
   ../Middlewares/Third_Party/FreeRTOS/Source/include/timers.h
 
+CMakeFiles/Odrive_protocol.elf.dir/Src/3rdParty/fibre/cpp/protocol.cpp.obj: ../Src/3rdParty/fibre/cpp/protocol.cpp \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/memory \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/stl_algobase.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/arm-none-eabi/thumb/v7e-m+fp/hard/bits/c++config.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/arm-none-eabi/thumb/v7e-m+fp/hard/bits/os_defines.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/arm-none-eabi/thumb/v7e-m+fp/hard/bits/cpu_defines.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/pstl/pstl_config.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/functexcept.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/exception_defines.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/cpp_type_traits.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/ext/type_traits.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/ext/numeric_traits.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/stl_pair.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/move.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/type_traits \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/stl_iterator_base_types.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/stl_iterator_base_funcs.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/concept_check.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/debug/assertions.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/stl_iterator.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/ptr_traits.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/debug/debug.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/predefined_ops.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/allocator.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/arm-none-eabi/thumb/v7e-m+fp/hard/bits/c++allocator.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/ext/new_allocator.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/new \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/exception \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/exception.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/exception_ptr.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/cxxabi_init_exception.h \
+  D:/stm32_DK/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/10.3.1/include/stddef.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/typeinfo \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/hash_bytes.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/nested_exception.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/memoryfwd.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/stl_construct.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/stl_uninitialized.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/ext/alloc_traits.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/alloc_traits.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/stl_tempbuf.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/stl_raw_storage_iter.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/ranges_uninitialized.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/iosfwd \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/stringfwd.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/postypes.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/cwchar \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/wchar.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/_ansi.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/newlib.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/_newlib_version.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/sys/config.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/machine/ieeefp.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/sys/features.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/sys/reent.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/sys/_types.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/machine/_types.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/machine/_default_types.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/sys/lock.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/sys/cdefs.h \
+  D:/stm32_DK/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/10.3.1/include/stdarg.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/sys/_locale.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/ext/atomicity.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/arm-none-eabi/thumb/v7e-m+fp/hard/bits/gthr.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/arm-none-eabi/thumb/v7e-m+fp/hard/bits/gthr-default.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/arm-none-eabi/thumb/v7e-m+fp/hard/bits/atomic_word.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/ext/concurrence.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/stl_function.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/backward/binders.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/uses_allocator.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/unique_ptr.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/utility \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/stl_relops.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/initializer_list \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/tuple \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/array \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/range_access.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/iterator_concepts.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/concepts \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/range_cmp.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/invoke.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/functional_hash.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/shared_ptr.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/shared_ptr_base.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/allocated_ptr.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/refwrap.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/ext/aligned_buffer.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/shared_ptr_atomic.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/atomic_base.h \
+  D:/stm32_DK/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/10.3.1/include/stdint.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/stdint.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/sys/_intsup.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/sys/_stdint.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/atomic_lockfree_defines.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/backward/auto_ptr.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/cstdint \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/pstl/glue_memory_defs.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/pstl/execution_defs.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/stdlib.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/cstdlib \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/stdlib.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/_ansi.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/machine/stdlib.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/alloca.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/std_abs.h \
+  ../Src/3rdParty/fibre/cpp/include/fibre/protocol.hpp \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/functional \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/std_function.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/unordered_map \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/hashtable.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/hashtable_policy.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/limits \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/node_handle.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/optional \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/enable_special_members.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/unordered_map.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/erase_if.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/vector \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/stl_vector.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/stl_bvector.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/vector.tcc \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/stl_algo.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/algorithmfwd.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/stl_heap.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/uniform_int_dist.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/cmath \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/math.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/specfun.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/tr1/gamma.tcc \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/tr1/special_function_util.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/tr1/bessel_function.tcc \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/tr1/beta_function.tcc \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/tr1/ell_integral.tcc \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/tr1/exp_integral.tcc \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/tr1/hypergeometric.tcc \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/tr1/legendre_function.tcc \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/tr1/modified_bessel_func.tcc \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/tr1/poly_hermite.tcc \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/tr1/poly_laguerre.tcc \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/tr1/riemann_zeta.tcc \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/string.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/strings.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/sys/string.h \
+  ../Src/3rdParty/fibre/cpp/include/fibre/crc.hpp \
+  D:/stm32_DK/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/10.3.1/include-fixed/limits.h \
+  D:/stm32_DK/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/10.3.1/include-fixed/syslimits.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/limits.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/sys/syslimits.h \
+  ../Src/3rdParty/fibre/cpp/include/fibre/cpp_utils.hpp \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/unistd.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/sys/unistd.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/sys/types.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/machine/endian.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/machine/_endian.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/sys/select.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/sys/_sigset.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/sys/_timeval.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/sys/timespec.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/sys/_timespec.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/sys/_pthreadtypes.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/sys/sched.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/machine/types.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/cstring \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/cstdio \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/stdio.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/sys/stdio.h \
+  ../Src/3rdParty/fibre/cpp/include/fibre/crc.hpp
+
+CMakeFiles/Odrive_protocol.elf.dir/Src/Bsp/communication/ascii_processor.cpp.obj: ../Src/Bsp/communication/ascii_processor.cpp \
+  ../Src/UserApp/common_inc.h \
+  ../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h \
+  D:/stm32_DK/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/10.3.1/include/stddef.h \
+  D:/stm32_DK/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/10.3.1/include/stdint.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/stdint.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/machine/_default_types.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/sys/features.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/_newlib_version.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/sys/_intsup.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/sys/_stdint.h \
+  ../Core/Inc/FreeRTOSConfig.h \
+  ../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h \
+  ../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h \
+  ../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h \
+  ../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/portmacro.h \
+  ../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h \
+  ../Middlewares/Third_Party/FreeRTOS/Source/include/task.h \
+  ../Middlewares/Third_Party/FreeRTOS/Source/include/list.h \
+  ../Core/Inc/main.h \
+  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h \
+  ../Core/Inc/stm32f4xx_hal_conf.h \
+  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h \
+  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h \
+  ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h \
+  ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f411xe.h \
+  ../Drivers/CMSIS/Include/core_cm4.h \
+  ../Drivers/CMSIS/Include/cmsis_version.h \
+  ../Drivers/CMSIS/Include/cmsis_compiler.h \
+  ../Drivers/CMSIS/Include/cmsis_gcc.h \
+  ../Drivers/CMSIS/Include/mpu_armv7.h \
+  ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/system_stm32f4xx.h \
+  ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h \
+  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h \
+  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h \
+  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio_ex.h \
+  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_exti.h \
+  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h \
+  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h \
+  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h \
+  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h \
+  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h \
+  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h \
+  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h \
+  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h \
+  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h \
+  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h \
+  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h \
+  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pcd.h \
+  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_usb.h \
+  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pcd_ex.h \
+  ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os.h \
+  ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.h \
+  ../Src/UserApp/freertos_inc.h \
+  ../Src/Bsp/utils/time_utils.h \
+  ../Core/Inc/gpio.h \
+  ../Core/Inc/main.h \
+  ../Src/Bsp/communication/communication.hpp \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/functional \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/arm-none-eabi/thumb/v7e-m+fp/hard/bits/c++config.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/arm-none-eabi/thumb/v7e-m+fp/hard/bits/os_defines.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/arm-none-eabi/thumb/v7e-m+fp/hard/bits/cpu_defines.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/pstl/pstl_config.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/stl_function.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/move.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/type_traits \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/backward/binders.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/new \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/exception \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/exception.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/exception_ptr.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/exception_defines.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/cxxabi_init_exception.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/typeinfo \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/hash_bytes.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/nested_exception.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/tuple \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/utility \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/stl_relops.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/stl_pair.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/initializer_list \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/array \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/functexcept.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/stl_algobase.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/cpp_type_traits.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/ext/type_traits.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/ext/numeric_traits.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/stl_iterator_base_types.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/stl_iterator_base_funcs.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/concept_check.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/debug/assertions.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/stl_iterator.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/ptr_traits.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/debug/debug.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/predefined_ops.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/range_access.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/iterator_concepts.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/concepts \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/range_cmp.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/uses_allocator.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/invoke.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/functional_hash.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/refwrap.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/std_function.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/unordered_map \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/allocator.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/arm-none-eabi/thumb/v7e-m+fp/hard/bits/c++allocator.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/ext/new_allocator.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/memoryfwd.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/ext/alloc_traits.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/alloc_traits.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/stl_construct.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/ext/aligned_buffer.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/hashtable.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/hashtable_policy.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/limits \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/node_handle.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/optional \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/enable_special_members.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/unordered_map.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/erase_if.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/vector \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/stl_uninitialized.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/stl_vector.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/stl_bvector.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/vector.tcc \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/stl_algo.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/cstdlib \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/stdlib.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/machine/ieeefp.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/_ansi.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/newlib.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/sys/config.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/sys/reent.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/_ansi.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/sys/_types.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/machine/_types.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/sys/lock.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/sys/cdefs.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/machine/stdlib.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/alloca.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/std_abs.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/algorithmfwd.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/stl_heap.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/stl_tempbuf.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/uniform_int_dist.h \
+  ../Src/Bsp/communication/ascii_processor.hpp \
+  ../Src/3rdParty/fibre/cpp/include/fibre/protocol.hpp \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/cmath \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/math.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/specfun.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/tr1/gamma.tcc \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/tr1/special_function_util.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/tr1/bessel_function.tcc \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/tr1/beta_function.tcc \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/tr1/ell_integral.tcc \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/tr1/exp_integral.tcc \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/tr1/hypergeometric.tcc \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/tr1/legendre_function.tcc \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/tr1/modified_bessel_func.tcc \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/tr1/poly_hermite.tcc \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/tr1/poly_laguerre.tcc \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/tr1/riemann_zeta.tcc \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/string.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/sys/_locale.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/strings.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/sys/string.h \
+  ../Src/3rdParty/fibre/cpp/include/fibre/crc.hpp \
+  D:/stm32_DK/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/10.3.1/include-fixed/limits.h \
+  D:/stm32_DK/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/10.3.1/include-fixed/syslimits.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/limits.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/sys/syslimits.h \
+  ../Src/3rdParty/fibre/cpp/include/fibre/cpp_utils.hpp \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/unistd.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/sys/unistd.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/sys/types.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/machine/endian.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/machine/_endian.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/sys/select.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/sys/_sigset.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/sys/_timeval.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/sys/timespec.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/sys/_timespec.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/sys/_pthreadtypes.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/sys/sched.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/machine/types.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/cstring \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/cstdio \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/stdio.h \
+  D:/stm32_DK/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/10.3.1/include/stdarg.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/sys/stdio.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/stdlib.h \
+  D:/stm32_DK/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/10.3.1/include/stdbool.h \
+  ../Src/Bsp/communication/interface_usb.hpp \
+  ../Src/Bsp/communication/interface_uart.hpp \
+  ../Src/Bsp/communication/ascii_processor.hpp
+
+CMakeFiles/Odrive_protocol.elf.dir/Src/Bsp/communication/communication.cpp.obj: ../Src/Bsp/communication/communication.cpp \
+  ../Src/Bsp/communication/communication.hpp \
+  ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os.h \
+  ../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h \
+  D:/stm32_DK/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/10.3.1/include/stddef.h \
+  D:/stm32_DK/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/10.3.1/include/stdint.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/stdint.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/machine/_default_types.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/sys/features.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/_newlib_version.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/sys/_intsup.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/sys/_stdint.h \
+  ../Core/Inc/FreeRTOSConfig.h \
+  ../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h \
+  ../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h \
+  ../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h \
+  ../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/portmacro.h \
+  ../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h \
+  ../Middlewares/Third_Party/FreeRTOS/Source/include/task.h \
+  ../Middlewares/Third_Party/FreeRTOS/Source/include/list.h \
+  ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/functional \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/arm-none-eabi/thumb/v7e-m+fp/hard/bits/c++config.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/arm-none-eabi/thumb/v7e-m+fp/hard/bits/os_defines.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/arm-none-eabi/thumb/v7e-m+fp/hard/bits/cpu_defines.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/pstl/pstl_config.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/stl_function.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/move.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/type_traits \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/backward/binders.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/new \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/exception \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/exception.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/exception_ptr.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/exception_defines.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/cxxabi_init_exception.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/typeinfo \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/hash_bytes.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/nested_exception.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/tuple \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/utility \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/stl_relops.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/stl_pair.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/initializer_list \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/array \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/functexcept.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/stl_algobase.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/cpp_type_traits.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/ext/type_traits.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/ext/numeric_traits.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/stl_iterator_base_types.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/stl_iterator_base_funcs.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/concept_check.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/debug/assertions.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/stl_iterator.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/ptr_traits.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/debug/debug.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/predefined_ops.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/range_access.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/iterator_concepts.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/concepts \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/range_cmp.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/uses_allocator.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/invoke.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/functional_hash.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/refwrap.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/std_function.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/unordered_map \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/allocator.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/arm-none-eabi/thumb/v7e-m+fp/hard/bits/c++allocator.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/ext/new_allocator.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/memoryfwd.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/ext/alloc_traits.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/alloc_traits.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/stl_construct.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/ext/aligned_buffer.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/hashtable.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/hashtable_policy.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/limits \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/node_handle.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/optional \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/enable_special_members.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/unordered_map.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/erase_if.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/vector \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/stl_uninitialized.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/stl_vector.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/stl_bvector.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/vector.tcc \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/stl_algo.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/cstdlib \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/stdlib.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/machine/ieeefp.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/_ansi.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/newlib.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/sys/config.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/sys/reent.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/_ansi.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/sys/_types.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/machine/_types.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/sys/lock.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/sys/cdefs.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/machine/stdlib.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/alloca.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/std_abs.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/algorithmfwd.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/stl_heap.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/stl_tempbuf.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/uniform_int_dist.h \
+  ../Src/Bsp/communication/ascii_processor.hpp \
+  ../Src/3rdParty/fibre/cpp/include/fibre/protocol.hpp \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/cmath \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/math.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/specfun.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/tr1/gamma.tcc \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/tr1/special_function_util.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/tr1/bessel_function.tcc \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/tr1/beta_function.tcc \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/tr1/ell_integral.tcc \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/tr1/exp_integral.tcc \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/tr1/hypergeometric.tcc \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/tr1/legendre_function.tcc \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/tr1/modified_bessel_func.tcc \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/tr1/poly_hermite.tcc \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/tr1/poly_laguerre.tcc \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/tr1/riemann_zeta.tcc \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/string.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/sys/_locale.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/strings.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/sys/string.h \
+  ../Src/3rdParty/fibre/cpp/include/fibre/crc.hpp \
+  D:/stm32_DK/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/10.3.1/include-fixed/limits.h \
+  D:/stm32_DK/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/10.3.1/include-fixed/syslimits.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/limits.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/sys/syslimits.h \
+  ../Src/3rdParty/fibre/cpp/include/fibre/cpp_utils.hpp \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/unistd.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/sys/unistd.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/sys/types.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/machine/endian.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/machine/_endian.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/sys/select.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/sys/_sigset.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/sys/_timeval.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/sys/timespec.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/sys/_timespec.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/sys/_pthreadtypes.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/sys/sched.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/machine/types.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/cstring \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/cstdio \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/stdio.h \
+  D:/stm32_DK/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/10.3.1/include/stdarg.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/sys/stdio.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/stdlib.h \
+  D:/stm32_DK/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/10.3.1/include/stdbool.h \
+  ../Src/Bsp/communication/interface_usb.hpp \
+  ../Src/Bsp/communication/interface_uart.hpp \
+  ../Src/UserApp/common_inc.h \
+  ../Core/Inc/main.h \
+  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h \
+  ../Core/Inc/stm32f4xx_hal_conf.h \
+  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h \
+  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h \
+  ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h \
+  ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f411xe.h \
+  ../Drivers/CMSIS/Include/core_cm4.h \
+  ../Drivers/CMSIS/Include/cmsis_version.h \
+  ../Drivers/CMSIS/Include/cmsis_compiler.h \
+  ../Drivers/CMSIS/Include/cmsis_gcc.h \
+  ../Drivers/CMSIS/Include/mpu_armv7.h \
+  ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/system_stm32f4xx.h \
+  ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h \
+  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h \
+  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h \
+  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio_ex.h \
+  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_exti.h \
+  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h \
+  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h \
+  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h \
+  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h \
+  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h \
+  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h \
+  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h \
+  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h \
+  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h \
+  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h \
+  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h \
+  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pcd.h \
+  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_usb.h \
+  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pcd_ex.h \
+  ../Src/UserApp/freertos_inc.h \
+  ../Src/Bsp/utils/time_utils.h \
+  ../Core/Inc/gpio.h \
+  ../Core/Inc/main.h \
+  ../Src/Bsp/communication/communication.hpp
+
+CMakeFiles/Odrive_protocol.elf.dir/Src/Bsp/communication/interface_uart.cpp.obj: ../Src/Bsp/communication/interface_uart.cpp \
+  ../Src/UserApp/common_inc.h \
+  ../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h \
+  D:/stm32_DK/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/10.3.1/include/stddef.h \
+  D:/stm32_DK/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/10.3.1/include/stdint.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/stdint.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/machine/_default_types.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/sys/features.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/_newlib_version.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/sys/_intsup.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/sys/_stdint.h \
+  ../Core/Inc/FreeRTOSConfig.h \
+  ../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h \
+  ../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h \
+  ../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h \
+  ../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/portmacro.h \
+  ../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h \
+  ../Middlewares/Third_Party/FreeRTOS/Source/include/task.h \
+  ../Middlewares/Third_Party/FreeRTOS/Source/include/list.h \
+  ../Core/Inc/main.h \
+  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h \
+  ../Core/Inc/stm32f4xx_hal_conf.h \
+  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h \
+  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h \
+  ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h \
+  ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f411xe.h \
+  ../Drivers/CMSIS/Include/core_cm4.h \
+  ../Drivers/CMSIS/Include/cmsis_version.h \
+  ../Drivers/CMSIS/Include/cmsis_compiler.h \
+  ../Drivers/CMSIS/Include/cmsis_gcc.h \
+  ../Drivers/CMSIS/Include/mpu_armv7.h \
+  ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/system_stm32f4xx.h \
+  ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h \
+  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h \
+  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h \
+  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio_ex.h \
+  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_exti.h \
+  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h \
+  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h \
+  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h \
+  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h \
+  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h \
+  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h \
+  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h \
+  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h \
+  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h \
+  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h \
+  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h \
+  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pcd.h \
+  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_usb.h \
+  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pcd_ex.h \
+  ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os.h \
+  ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.h \
+  ../Src/UserApp/freertos_inc.h \
+  ../Src/Bsp/utils/time_utils.h \
+  ../Core/Inc/gpio.h \
+  ../Core/Inc/main.h \
+  ../Src/Bsp/communication/communication.hpp \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/functional \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/arm-none-eabi/thumb/v7e-m+fp/hard/bits/c++config.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/arm-none-eabi/thumb/v7e-m+fp/hard/bits/os_defines.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/arm-none-eabi/thumb/v7e-m+fp/hard/bits/cpu_defines.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/pstl/pstl_config.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/stl_function.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/move.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/type_traits \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/backward/binders.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/new \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/exception \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/exception.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/exception_ptr.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/exception_defines.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/cxxabi_init_exception.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/typeinfo \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/hash_bytes.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/nested_exception.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/tuple \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/utility \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/stl_relops.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/stl_pair.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/initializer_list \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/array \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/functexcept.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/stl_algobase.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/cpp_type_traits.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/ext/type_traits.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/ext/numeric_traits.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/stl_iterator_base_types.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/stl_iterator_base_funcs.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/concept_check.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/debug/assertions.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/stl_iterator.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/ptr_traits.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/debug/debug.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/predefined_ops.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/range_access.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/iterator_concepts.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/concepts \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/range_cmp.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/uses_allocator.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/invoke.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/functional_hash.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/refwrap.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/std_function.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/unordered_map \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/allocator.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/arm-none-eabi/thumb/v7e-m+fp/hard/bits/c++allocator.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/ext/new_allocator.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/memoryfwd.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/ext/alloc_traits.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/alloc_traits.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/stl_construct.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/ext/aligned_buffer.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/hashtable.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/hashtable_policy.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/limits \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/node_handle.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/optional \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/enable_special_members.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/unordered_map.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/erase_if.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/vector \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/stl_uninitialized.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/stl_vector.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/stl_bvector.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/vector.tcc \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/stl_algo.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/cstdlib \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/stdlib.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/machine/ieeefp.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/_ansi.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/newlib.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/sys/config.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/sys/reent.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/_ansi.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/sys/_types.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/machine/_types.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/sys/lock.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/sys/cdefs.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/machine/stdlib.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/alloca.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/std_abs.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/algorithmfwd.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/stl_heap.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/stl_tempbuf.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/uniform_int_dist.h \
+  ../Src/Bsp/communication/ascii_processor.hpp \
+  ../Src/3rdParty/fibre/cpp/include/fibre/protocol.hpp \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/cmath \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/math.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/specfun.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/tr1/gamma.tcc \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/tr1/special_function_util.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/tr1/bessel_function.tcc \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/tr1/beta_function.tcc \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/tr1/ell_integral.tcc \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/tr1/exp_integral.tcc \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/tr1/hypergeometric.tcc \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/tr1/legendre_function.tcc \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/tr1/modified_bessel_func.tcc \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/tr1/poly_hermite.tcc \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/tr1/poly_laguerre.tcc \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/tr1/riemann_zeta.tcc \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/string.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/sys/_locale.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/strings.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/sys/string.h \
+  ../Src/3rdParty/fibre/cpp/include/fibre/crc.hpp \
+  D:/stm32_DK/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/10.3.1/include-fixed/limits.h \
+  D:/stm32_DK/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/10.3.1/include-fixed/syslimits.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/limits.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/sys/syslimits.h \
+  ../Src/3rdParty/fibre/cpp/include/fibre/cpp_utils.hpp \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/unistd.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/sys/unistd.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/sys/types.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/machine/endian.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/machine/_endian.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/sys/select.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/sys/_sigset.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/sys/_timeval.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/sys/timespec.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/sys/_timespec.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/sys/_pthreadtypes.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/sys/sched.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/machine/types.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/cstring \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/cstdio \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/stdio.h \
+  D:/stm32_DK/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/10.3.1/include/stdarg.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/sys/stdio.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/stdlib.h \
+  D:/stm32_DK/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/10.3.1/include/stdbool.h \
+  ../Src/Bsp/communication/interface_usb.hpp \
+  ../Src/Bsp/communication/interface_uart.hpp \
+  ../Src/Bsp/communication/interface_uart.hpp \
+  ../Src/Bsp/communication/ascii_processor.hpp \
+  ../Core/Inc/usart.h
+
+CMakeFiles/Odrive_protocol.elf.dir/Src/Bsp/communication/interface_usb.cpp.obj: ../Src/Bsp/communication/interface_usb.cpp \
+  ../Src/UserApp/common_inc.h \
+  ../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h \
+  D:/stm32_DK/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/10.3.1/include/stddef.h \
+  D:/stm32_DK/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/10.3.1/include/stdint.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/stdint.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/machine/_default_types.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/sys/features.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/_newlib_version.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/sys/_intsup.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/sys/_stdint.h \
+  ../Core/Inc/FreeRTOSConfig.h \
+  ../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h \
+  ../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h \
+  ../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h \
+  ../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/portmacro.h \
+  ../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h \
+  ../Middlewares/Third_Party/FreeRTOS/Source/include/task.h \
+  ../Middlewares/Third_Party/FreeRTOS/Source/include/list.h \
+  ../Core/Inc/main.h \
+  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h \
+  ../Core/Inc/stm32f4xx_hal_conf.h \
+  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h \
+  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h \
+  ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h \
+  ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f411xe.h \
+  ../Drivers/CMSIS/Include/core_cm4.h \
+  ../Drivers/CMSIS/Include/cmsis_version.h \
+  ../Drivers/CMSIS/Include/cmsis_compiler.h \
+  ../Drivers/CMSIS/Include/cmsis_gcc.h \
+  ../Drivers/CMSIS/Include/mpu_armv7.h \
+  ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/system_stm32f4xx.h \
+  ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h \
+  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h \
+  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h \
+  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio_ex.h \
+  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_exti.h \
+  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h \
+  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h \
+  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h \
+  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h \
+  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h \
+  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h \
+  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h \
+  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h \
+  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h \
+  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h \
+  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h \
+  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pcd.h \
+  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_usb.h \
+  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pcd_ex.h \
+  ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os.h \
+  ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.h \
+  ../Src/UserApp/freertos_inc.h \
+  ../Src/Bsp/utils/time_utils.h \
+  ../Core/Inc/gpio.h \
+  ../Core/Inc/main.h \
+  ../Src/Bsp/communication/communication.hpp \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/functional \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/arm-none-eabi/thumb/v7e-m+fp/hard/bits/c++config.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/arm-none-eabi/thumb/v7e-m+fp/hard/bits/os_defines.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/arm-none-eabi/thumb/v7e-m+fp/hard/bits/cpu_defines.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/pstl/pstl_config.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/stl_function.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/move.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/type_traits \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/backward/binders.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/new \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/exception \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/exception.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/exception_ptr.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/exception_defines.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/cxxabi_init_exception.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/typeinfo \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/hash_bytes.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/nested_exception.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/tuple \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/utility \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/stl_relops.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/stl_pair.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/initializer_list \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/array \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/functexcept.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/stl_algobase.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/cpp_type_traits.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/ext/type_traits.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/ext/numeric_traits.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/stl_iterator_base_types.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/stl_iterator_base_funcs.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/concept_check.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/debug/assertions.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/stl_iterator.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/ptr_traits.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/debug/debug.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/predefined_ops.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/range_access.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/iterator_concepts.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/concepts \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/range_cmp.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/uses_allocator.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/invoke.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/functional_hash.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/refwrap.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/std_function.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/unordered_map \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/allocator.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/arm-none-eabi/thumb/v7e-m+fp/hard/bits/c++allocator.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/ext/new_allocator.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/memoryfwd.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/ext/alloc_traits.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/alloc_traits.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/stl_construct.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/ext/aligned_buffer.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/hashtable.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/hashtable_policy.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/limits \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/node_handle.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/optional \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/enable_special_members.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/unordered_map.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/erase_if.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/vector \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/stl_uninitialized.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/stl_vector.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/stl_bvector.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/vector.tcc \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/stl_algo.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/cstdlib \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/stdlib.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/machine/ieeefp.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/_ansi.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/newlib.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/sys/config.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/sys/reent.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/_ansi.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/sys/_types.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/machine/_types.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/sys/lock.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/sys/cdefs.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/machine/stdlib.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/alloca.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/std_abs.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/algorithmfwd.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/stl_heap.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/stl_tempbuf.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/uniform_int_dist.h \
+  ../Src/Bsp/communication/ascii_processor.hpp \
+  ../Src/3rdParty/fibre/cpp/include/fibre/protocol.hpp \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/cmath \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/math.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/specfun.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/tr1/gamma.tcc \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/tr1/special_function_util.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/tr1/bessel_function.tcc \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/tr1/beta_function.tcc \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/tr1/ell_integral.tcc \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/tr1/exp_integral.tcc \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/tr1/hypergeometric.tcc \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/tr1/legendre_function.tcc \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/tr1/modified_bessel_func.tcc \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/tr1/poly_hermite.tcc \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/tr1/poly_laguerre.tcc \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/tr1/riemann_zeta.tcc \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/string.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/sys/_locale.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/strings.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/sys/string.h \
+  ../Src/3rdParty/fibre/cpp/include/fibre/crc.hpp \
+  D:/stm32_DK/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/10.3.1/include-fixed/limits.h \
+  D:/stm32_DK/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/10.3.1/include-fixed/syslimits.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/limits.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/sys/syslimits.h \
+  ../Src/3rdParty/fibre/cpp/include/fibre/cpp_utils.hpp \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/unistd.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/sys/unistd.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/sys/types.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/machine/endian.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/machine/_endian.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/sys/select.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/sys/_sigset.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/sys/_timeval.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/sys/timespec.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/sys/_timespec.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/sys/_pthreadtypes.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/sys/sched.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/machine/types.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/cstring \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/cstdio \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/stdio.h \
+  D:/stm32_DK/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/10.3.1/include/stdarg.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/sys/stdio.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/stdlib.h \
+  D:/stm32_DK/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/10.3.1/include/stdbool.h \
+  ../Src/Bsp/communication/interface_usb.hpp \
+  ../Src/Bsp/communication/interface_uart.hpp \
+  ../Src/Bsp/communication/ascii_processor.hpp \
+  ../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc/usbd_cdc.h \
+  ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ioreq.h \
+  ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_def.h \
+  ../USB_DEVICE/Target/usbd_conf.h \
+  ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h \
+  ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ioreq.h \
+  ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ctlreq.h \
+  ../USB_DEVICE/App/usbd_cdc_if.h \
+  ../USB_DEVICE/App/usb_device.h \
+  ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_def.h \
+  ../Src/Bsp/communication/interface_usb.hpp
+
+CMakeFiles/Odrive_protocol.elf.dir/Src/Bsp/utils/software_i2c/soft_i2c.c.obj: ../Src/Bsp/utils/software_i2c/soft_i2c.c \
+  ../Src/Bsp/utils/software_i2c/soft_i2c.h \
+  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h \
+  ../Core/Inc/stm32f4xx_hal_conf.h \
+  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h \
+  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h \
+  ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h \
+  ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f411xe.h \
+  ../Drivers/CMSIS/Include/core_cm4.h \
+  D:/stm32_DK/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/10.3.1/include/stdint.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/stdint.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/machine/_default_types.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/sys/features.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/_newlib_version.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/sys/_intsup.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/sys/_stdint.h \
+  ../Drivers/CMSIS/Include/cmsis_version.h \
+  ../Drivers/CMSIS/Include/cmsis_compiler.h \
+  ../Drivers/CMSIS/Include/cmsis_gcc.h \
+  ../Drivers/CMSIS/Include/mpu_armv7.h \
+  ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/system_stm32f4xx.h \
+  ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h \
+  D:/stm32_DK/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/10.3.1/include/stddef.h \
+  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h \
+  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h \
+  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio_ex.h \
+  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_exti.h \
+  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h \
+  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h \
+  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h \
+  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h \
+  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h \
+  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h \
+  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h \
+  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h \
+  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h \
+  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h \
+  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h \
+  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pcd.h \
+  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_usb.h \
+  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pcd_ex.h \
+  ../Core/Inc/gpio.h \
+  ../Core/Inc/main.h
+
+CMakeFiles/Odrive_protocol.elf.dir/Src/Bsp/utils/time_utils.c.obj: ../Src/Bsp/utils/time_utils.c \
+  ../Src/Bsp/utils/time_utils.h \
+  ../Core/Inc/main.h \
+  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h \
+  ../Core/Inc/stm32f4xx_hal_conf.h \
+  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h \
+  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h \
+  ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h \
+  ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f411xe.h \
+  ../Drivers/CMSIS/Include/core_cm4.h \
+  D:/stm32_DK/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/10.3.1/include/stdint.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/stdint.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/machine/_default_types.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/sys/features.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/_newlib_version.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/sys/_intsup.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/sys/_stdint.h \
+  ../Drivers/CMSIS/Include/cmsis_version.h \
+  ../Drivers/CMSIS/Include/cmsis_compiler.h \
+  ../Drivers/CMSIS/Include/cmsis_gcc.h \
+  ../Drivers/CMSIS/Include/mpu_armv7.h \
+  ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/system_stm32f4xx.h \
+  ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h \
+  D:/stm32_DK/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/10.3.1/include/stddef.h \
+  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h \
+  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h \
+  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio_ex.h \
+  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_exti.h \
+  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h \
+  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h \
+  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h \
+  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h \
+  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h \
+  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h \
+  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h \
+  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h \
+  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h \
+  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h \
+  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h \
+  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pcd.h \
+  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_usb.h \
+  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pcd_ex.h
+
+CMakeFiles/Odrive_protocol.elf.dir/Src/UserApp/main.cpp.obj: ../Src/UserApp/main.cpp \
+  ../Src/UserApp/common_inc.h \
+  ../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h \
+  D:/stm32_DK/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/10.3.1/include/stddef.h \
+  D:/stm32_DK/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/10.3.1/include/stdint.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/stdint.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/machine/_default_types.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/sys/features.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/_newlib_version.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/sys/_intsup.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/sys/_stdint.h \
+  ../Core/Inc/FreeRTOSConfig.h \
+  ../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h \
+  ../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h \
+  ../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h \
+  ../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/portmacro.h \
+  ../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h \
+  ../Middlewares/Third_Party/FreeRTOS/Source/include/task.h \
+  ../Middlewares/Third_Party/FreeRTOS/Source/include/list.h \
+  ../Core/Inc/main.h \
+  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h \
+  ../Core/Inc/stm32f4xx_hal_conf.h \
+  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h \
+  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h \
+  ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h \
+  ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f411xe.h \
+  ../Drivers/CMSIS/Include/core_cm4.h \
+  ../Drivers/CMSIS/Include/cmsis_version.h \
+  ../Drivers/CMSIS/Include/cmsis_compiler.h \
+  ../Drivers/CMSIS/Include/cmsis_gcc.h \
+  ../Drivers/CMSIS/Include/mpu_armv7.h \
+  ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/system_stm32f4xx.h \
+  ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h \
+  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h \
+  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h \
+  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio_ex.h \
+  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_exti.h \
+  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h \
+  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h \
+  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h \
+  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h \
+  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h \
+  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h \
+  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h \
+  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h \
+  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h \
+  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h \
+  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h \
+  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pcd.h \
+  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_usb.h \
+  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pcd_ex.h \
+  ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os.h \
+  ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.h \
+  ../Src/UserApp/freertos_inc.h \
+  ../Src/Bsp/utils/time_utils.h \
+  ../Core/Inc/gpio.h \
+  ../Core/Inc/main.h \
+  ../Src/Bsp/communication/communication.hpp \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/functional \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/arm-none-eabi/thumb/v7e-m+fp/hard/bits/c++config.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/arm-none-eabi/thumb/v7e-m+fp/hard/bits/os_defines.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/arm-none-eabi/thumb/v7e-m+fp/hard/bits/cpu_defines.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/pstl/pstl_config.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/stl_function.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/move.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/type_traits \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/backward/binders.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/new \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/exception \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/exception.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/exception_ptr.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/exception_defines.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/cxxabi_init_exception.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/typeinfo \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/hash_bytes.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/nested_exception.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/tuple \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/utility \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/stl_relops.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/stl_pair.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/initializer_list \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/array \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/functexcept.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/stl_algobase.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/cpp_type_traits.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/ext/type_traits.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/ext/numeric_traits.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/stl_iterator_base_types.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/stl_iterator_base_funcs.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/concept_check.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/debug/assertions.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/stl_iterator.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/ptr_traits.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/debug/debug.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/predefined_ops.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/range_access.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/iterator_concepts.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/concepts \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/range_cmp.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/uses_allocator.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/invoke.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/functional_hash.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/refwrap.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/std_function.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/unordered_map \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/allocator.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/arm-none-eabi/thumb/v7e-m+fp/hard/bits/c++allocator.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/ext/new_allocator.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/memoryfwd.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/ext/alloc_traits.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/alloc_traits.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/stl_construct.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/ext/aligned_buffer.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/hashtable.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/hashtable_policy.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/limits \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/node_handle.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/optional \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/enable_special_members.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/unordered_map.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/erase_if.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/vector \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/stl_uninitialized.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/stl_vector.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/stl_bvector.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/vector.tcc \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/stl_algo.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/cstdlib \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/stdlib.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/machine/ieeefp.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/_ansi.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/newlib.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/sys/config.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/sys/reent.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/_ansi.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/sys/_types.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/machine/_types.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/sys/lock.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/sys/cdefs.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/machine/stdlib.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/alloca.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/std_abs.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/algorithmfwd.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/stl_heap.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/stl_tempbuf.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/uniform_int_dist.h \
+  ../Src/Bsp/communication/ascii_processor.hpp \
+  ../Src/3rdParty/fibre/cpp/include/fibre/protocol.hpp \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/cmath \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/math.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/specfun.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/tr1/gamma.tcc \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/tr1/special_function_util.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/tr1/bessel_function.tcc \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/tr1/beta_function.tcc \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/tr1/ell_integral.tcc \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/tr1/exp_integral.tcc \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/tr1/hypergeometric.tcc \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/tr1/legendre_function.tcc \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/tr1/modified_bessel_func.tcc \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/tr1/poly_hermite.tcc \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/tr1/poly_laguerre.tcc \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/tr1/riemann_zeta.tcc \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/string.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/sys/_locale.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/strings.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/sys/string.h \
+  ../Src/3rdParty/fibre/cpp/include/fibre/crc.hpp \
+  D:/stm32_DK/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/10.3.1/include-fixed/limits.h \
+  D:/stm32_DK/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/10.3.1/include-fixed/syslimits.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/limits.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/sys/syslimits.h \
+  ../Src/3rdParty/fibre/cpp/include/fibre/cpp_utils.hpp \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/unistd.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/sys/unistd.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/sys/types.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/machine/endian.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/machine/_endian.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/sys/select.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/sys/_sigset.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/sys/_timeval.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/sys/timespec.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/sys/_timespec.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/sys/_pthreadtypes.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/sys/sched.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/machine/types.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/cstring \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/cstdio \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/stdio.h \
+  D:/stm32_DK/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/10.3.1/include/stdarg.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/sys/stdio.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/stdlib.h \
+  D:/stm32_DK/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/10.3.1/include/stdbool.h \
+  ../Src/Bsp/communication/interface_usb.hpp \
+  ../Src/Bsp/communication/interface_uart.hpp
+
+CMakeFiles/Odrive_protocol.elf.dir/Src/UserApp/protocols/ascii_protocol.cpp.obj: ../Src/UserApp/protocols/ascii_protocol.cpp \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/string \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/arm-none-eabi/thumb/v7e-m+fp/hard/bits/c++config.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/arm-none-eabi/thumb/v7e-m+fp/hard/bits/os_defines.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/arm-none-eabi/thumb/v7e-m+fp/hard/bits/cpu_defines.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/pstl/pstl_config.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/stringfwd.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/memoryfwd.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/char_traits.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/stl_algobase.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/functexcept.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/exception_defines.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/cpp_type_traits.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/ext/type_traits.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/ext/numeric_traits.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/stl_pair.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/move.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/type_traits \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/stl_iterator_base_types.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/stl_iterator_base_funcs.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/concept_check.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/debug/assertions.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/stl_iterator.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/ptr_traits.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/debug/debug.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/predefined_ops.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/postypes.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/cwchar \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/wchar.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/_ansi.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/newlib.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/_newlib_version.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/sys/config.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/machine/ieeefp.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/sys/features.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/sys/reent.h \
+  D:/stm32_DK/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/10.3.1/include/stddef.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/sys/_types.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/machine/_types.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/machine/_default_types.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/sys/lock.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/sys/cdefs.h \
+  D:/stm32_DK/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/10.3.1/include/stdarg.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/sys/_locale.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/cstdint \
+  D:/stm32_DK/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/10.3.1/include/stdint.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/stdint.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/sys/_intsup.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/sys/_stdint.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/allocator.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/arm-none-eabi/thumb/v7e-m+fp/hard/bits/c++allocator.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/ext/new_allocator.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/new \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/exception \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/exception.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/exception_ptr.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/cxxabi_init_exception.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/typeinfo \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/hash_bytes.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/nested_exception.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/localefwd.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/arm-none-eabi/thumb/v7e-m+fp/hard/bits/c++locale.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/clocale \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/locale.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/_ansi.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/iosfwd \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/cctype \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/ctype.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/ostream_insert.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/cxxabi_forced.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/stl_function.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/backward/binders.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/range_access.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/initializer_list \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/iterator_concepts.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/concepts \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/range_cmp.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/basic_string.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/ext/atomicity.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/arm-none-eabi/thumb/v7e-m+fp/hard/bits/gthr.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/arm-none-eabi/thumb/v7e-m+fp/hard/bits/gthr-default.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/arm-none-eabi/thumb/v7e-m+fp/hard/bits/atomic_word.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/ext/alloc_traits.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/alloc_traits.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/stl_construct.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/string_view \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/functional_hash.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/string_view.tcc \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/ext/string_conversions.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/cstdlib \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/stdlib.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/machine/stdlib.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/alloca.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/std_abs.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/cstdio \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/stdio.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/sys/types.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/machine/endian.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/machine/_endian.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/sys/select.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/sys/_sigset.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/sys/_timeval.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/sys/timespec.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/sys/_timespec.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/sys/_pthreadtypes.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/sys/sched.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/machine/types.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/sys/stdio.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/cerrno \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/errno.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/sys/errno.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/charconv.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/basic_string.tcc \
+  ../Src/UserApp/common_inc.h \
+  ../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h \
+  ../Core/Inc/FreeRTOSConfig.h \
+  ../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h \
+  ../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h \
+  ../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h \
+  ../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/portmacro.h \
+  ../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h \
+  ../Middlewares/Third_Party/FreeRTOS/Source/include/task.h \
+  ../Middlewares/Third_Party/FreeRTOS/Source/include/list.h \
+  ../Core/Inc/main.h \
+  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h \
+  ../Core/Inc/stm32f4xx_hal_conf.h \
+  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h \
+  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h \
+  ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h \
+  ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f411xe.h \
+  ../Drivers/CMSIS/Include/core_cm4.h \
+  ../Drivers/CMSIS/Include/cmsis_version.h \
+  ../Drivers/CMSIS/Include/cmsis_compiler.h \
+  ../Drivers/CMSIS/Include/cmsis_gcc.h \
+  ../Drivers/CMSIS/Include/mpu_armv7.h \
+  ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/system_stm32f4xx.h \
+  ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h \
+  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h \
+  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h \
+  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio_ex.h \
+  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_exti.h \
+  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h \
+  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h \
+  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h \
+  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h \
+  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h \
+  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h \
+  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h \
+  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h \
+  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h \
+  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h \
+  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h \
+  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pcd.h \
+  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_usb.h \
+  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pcd_ex.h \
+  ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os.h \
+  ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.h \
+  ../Src/UserApp/freertos_inc.h \
+  ../Src/Bsp/utils/time_utils.h \
+  ../Core/Inc/gpio.h \
+  ../Core/Inc/main.h \
+  ../Src/Bsp/communication/communication.hpp \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/functional \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/tuple \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/utility \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/stl_relops.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/array \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/uses_allocator.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/invoke.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/refwrap.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/std_function.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/unordered_map \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/ext/aligned_buffer.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/hashtable.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/hashtable_policy.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/limits \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/node_handle.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/optional \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/enable_special_members.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/unordered_map.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/erase_if.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/vector \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/stl_uninitialized.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/stl_vector.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/stl_bvector.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/vector.tcc \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/stl_algo.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/algorithmfwd.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/stl_heap.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/stl_tempbuf.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/uniform_int_dist.h \
+  ../Src/Bsp/communication/ascii_processor.hpp \
+  ../Src/3rdParty/fibre/cpp/include/fibre/protocol.hpp \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/cmath \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/math.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/specfun.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/tr1/gamma.tcc \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/tr1/special_function_util.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/tr1/bessel_function.tcc \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/tr1/beta_function.tcc \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/tr1/ell_integral.tcc \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/tr1/exp_integral.tcc \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/tr1/hypergeometric.tcc \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/tr1/legendre_function.tcc \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/tr1/modified_bessel_func.tcc \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/tr1/poly_hermite.tcc \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/tr1/poly_laguerre.tcc \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/tr1/riemann_zeta.tcc \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/string.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/strings.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/sys/string.h \
+  ../Src/3rdParty/fibre/cpp/include/fibre/crc.hpp \
+  D:/stm32_DK/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/10.3.1/include-fixed/limits.h \
+  D:/stm32_DK/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/10.3.1/include-fixed/syslimits.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/limits.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/sys/syslimits.h \
+  ../Src/3rdParty/fibre/cpp/include/fibre/cpp_utils.hpp \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/unistd.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/sys/unistd.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/cstring \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/stdlib.h \
+  D:/stm32_DK/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/10.3.1/include/stdbool.h \
+  ../Src/Bsp/communication/interface_usb.hpp \
+  ../Src/Bsp/communication/interface_uart.hpp
+
+CMakeFiles/Odrive_protocol.elf.dir/Src/UserApp/protocols/cmd_protocol.cpp.obj: ../Src/UserApp/protocols/cmd_protocol.cpp \
+  ../Src/UserApp/common_inc.h \
+  ../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h \
+  D:/stm32_DK/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/10.3.1/include/stddef.h \
+  D:/stm32_DK/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/10.3.1/include/stdint.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/stdint.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/machine/_default_types.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/sys/features.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/_newlib_version.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/sys/_intsup.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/sys/_stdint.h \
+  ../Core/Inc/FreeRTOSConfig.h \
+  ../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h \
+  ../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h \
+  ../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h \
+  ../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/portmacro.h \
+  ../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h \
+  ../Middlewares/Third_Party/FreeRTOS/Source/include/task.h \
+  ../Middlewares/Third_Party/FreeRTOS/Source/include/list.h \
+  ../Core/Inc/main.h \
+  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h \
+  ../Core/Inc/stm32f4xx_hal_conf.h \
+  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h \
+  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h \
+  ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h \
+  ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f411xe.h \
+  ../Drivers/CMSIS/Include/core_cm4.h \
+  ../Drivers/CMSIS/Include/cmsis_version.h \
+  ../Drivers/CMSIS/Include/cmsis_compiler.h \
+  ../Drivers/CMSIS/Include/cmsis_gcc.h \
+  ../Drivers/CMSIS/Include/mpu_armv7.h \
+  ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/system_stm32f4xx.h \
+  ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h \
+  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h \
+  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h \
+  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio_ex.h \
+  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_exti.h \
+  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h \
+  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h \
+  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h \
+  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h \
+  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h \
+  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h \
+  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h \
+  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h \
+  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h \
+  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h \
+  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h \
+  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pcd.h \
+  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_usb.h \
+  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pcd_ex.h \
+  ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os.h \
+  ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.h \
+  ../Src/UserApp/freertos_inc.h \
+  ../Src/Bsp/utils/time_utils.h \
+  ../Core/Inc/gpio.h \
+  ../Core/Inc/main.h \
+  ../Src/Bsp/communication/communication.hpp \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/functional \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/arm-none-eabi/thumb/v7e-m+fp/hard/bits/c++config.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/arm-none-eabi/thumb/v7e-m+fp/hard/bits/os_defines.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/arm-none-eabi/thumb/v7e-m+fp/hard/bits/cpu_defines.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/pstl/pstl_config.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/stl_function.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/move.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/type_traits \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/backward/binders.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/new \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/exception \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/exception.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/exception_ptr.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/exception_defines.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/cxxabi_init_exception.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/typeinfo \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/hash_bytes.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/nested_exception.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/tuple \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/utility \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/stl_relops.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/stl_pair.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/initializer_list \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/array \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/functexcept.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/stl_algobase.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/cpp_type_traits.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/ext/type_traits.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/ext/numeric_traits.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/stl_iterator_base_types.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/stl_iterator_base_funcs.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/concept_check.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/debug/assertions.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/stl_iterator.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/ptr_traits.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/debug/debug.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/predefined_ops.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/range_access.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/iterator_concepts.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/concepts \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/range_cmp.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/uses_allocator.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/invoke.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/functional_hash.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/refwrap.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/std_function.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/unordered_map \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/allocator.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/arm-none-eabi/thumb/v7e-m+fp/hard/bits/c++allocator.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/ext/new_allocator.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/memoryfwd.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/ext/alloc_traits.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/alloc_traits.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/stl_construct.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/ext/aligned_buffer.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/hashtable.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/hashtable_policy.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/limits \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/node_handle.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/optional \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/enable_special_members.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/unordered_map.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/erase_if.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/vector \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/stl_uninitialized.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/stl_vector.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/stl_bvector.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/vector.tcc \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/stl_algo.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/cstdlib \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/stdlib.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/machine/ieeefp.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/_ansi.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/newlib.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/sys/config.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/sys/reent.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/_ansi.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/sys/_types.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/machine/_types.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/sys/lock.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/sys/cdefs.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/machine/stdlib.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/alloca.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/std_abs.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/algorithmfwd.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/stl_heap.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/stl_tempbuf.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/uniform_int_dist.h \
+  ../Src/Bsp/communication/ascii_processor.hpp \
+  ../Src/3rdParty/fibre/cpp/include/fibre/protocol.hpp \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/cmath \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/math.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/specfun.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/tr1/gamma.tcc \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/tr1/special_function_util.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/tr1/bessel_function.tcc \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/tr1/beta_function.tcc \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/tr1/ell_integral.tcc \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/tr1/exp_integral.tcc \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/tr1/hypergeometric.tcc \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/tr1/legendre_function.tcc \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/tr1/modified_bessel_func.tcc \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/tr1/poly_hermite.tcc \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/tr1/poly_laguerre.tcc \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/tr1/riemann_zeta.tcc \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/string.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/sys/_locale.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/strings.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/sys/string.h \
+  ../Src/3rdParty/fibre/cpp/include/fibre/crc.hpp \
+  D:/stm32_DK/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/10.3.1/include-fixed/limits.h \
+  D:/stm32_DK/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/10.3.1/include-fixed/syslimits.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/limits.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/sys/syslimits.h \
+  ../Src/3rdParty/fibre/cpp/include/fibre/cpp_utils.hpp \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/unistd.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/sys/unistd.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/sys/types.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/machine/endian.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/machine/_endian.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/sys/select.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/sys/_sigset.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/sys/_timeval.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/sys/timespec.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/sys/_timespec.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/sys/_pthreadtypes.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/sys/sched.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/machine/types.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/cstring \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/cstdio \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/stdio.h \
+  D:/stm32_DK/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/10.3.1/include/stdarg.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/sys/stdio.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/stdlib.h \
+  D:/stm32_DK/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/10.3.1/include/stdbool.h \
+  ../Src/Bsp/communication/interface_usb.hpp \
+  ../Src/Bsp/communication/interface_uart.hpp
+
 CMakeFiles/Odrive_protocol.elf.dir/USB_DEVICE/App/usb_device.c.obj: ../USB_DEVICE/App/usb_device.c \
   ../USB_DEVICE/App/usb_device.h \
   ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h \
@@ -2015,7 +3704,6 @@ CMakeFiles/Odrive_protocol.elf.dir/USB_DEVICE/App/usb_device.c.obj: ../USB_DEVIC
   D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/sys/_locale.h \
   D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/strings.h \
   D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/sys/string.h \
-  ../Core/Inc/main.h \
   ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h \
   ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_def.h \
   ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ioreq.h \
@@ -2024,7 +3712,8 @@ CMakeFiles/Odrive_protocol.elf.dir/USB_DEVICE/App/usb_device.c.obj: ../USB_DEVIC
   ../USB_DEVICE/App/usbd_desc.h \
   ../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc/usbd_cdc.h \
   ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ioreq.h \
-  ../USB_DEVICE/App/usbd_cdc_if.h
+  ../USB_DEVICE/App/usbd_cdc_if.h \
+  ../Core/Inc/main.h
 
 CMakeFiles/Odrive_protocol.elf.dir/USB_DEVICE/App/usbd_cdc_if.c.obj: ../USB_DEVICE/App/usbd_cdc_if.c \
   ../USB_DEVICE/App/usbd_cdc_if.h \
@@ -2068,11 +3757,6 @@ CMakeFiles/Odrive_protocol.elf.dir/USB_DEVICE/App/usbd_cdc_if.c.obj: ../USB_DEVI
   D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/sys/_locale.h \
   D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/strings.h \
   D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/sys/string.h \
-  ../Core/Inc/main.h \
-  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h \
-  ../Core/Inc/stm32f4xx_hal_conf.h \
-  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h \
-  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h \
   ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h \
   ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f411xe.h \
   ../Drivers/CMSIS/Include/core_cm4.h \
@@ -2084,6 +3768,10 @@ CMakeFiles/Odrive_protocol.elf.dir/USB_DEVICE/App/usbd_cdc_if.c.obj: ../USB_DEVI
   ../Drivers/CMSIS/Include/cmsis_gcc.h \
   ../Drivers/CMSIS/Include/mpu_armv7.h \
   ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/system_stm32f4xx.h \
+  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h \
+  ../Core/Inc/stm32f4xx_hal_conf.h \
+  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h \
+  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h \
   ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h \
   ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h \
   ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h \
@@ -2105,7 +3793,197 @@ CMakeFiles/Odrive_protocol.elf.dir/USB_DEVICE/App/usbd_cdc_if.c.obj: ../USB_DEVI
   ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pcd_ex.h \
   ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h \
   ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ioreq.h \
-  ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ctlreq.h
+  ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ctlreq.h \
+  ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os.h \
+  ../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h \
+  ../Core/Inc/FreeRTOSConfig.h \
+  ../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h \
+  ../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h \
+  ../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h \
+  ../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/portmacro.h \
+  ../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h \
+  ../Middlewares/Third_Party/FreeRTOS/Source/include/task.h \
+  ../Middlewares/Third_Party/FreeRTOS/Source/include/list.h \
+  ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.h \
+  ../Src/UserApp/freertos_inc.h \
+  ../Src/Bsp/communication/interface_usb.hpp
+
+CMakeFiles/Odrive_protocol.elf.dir/USB_DEVICE/App/usbd_desc.c.obj: ../USB_DEVICE/App/usbd_desc.c \
+  ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h \
+  ../USB_DEVICE/Target/usbd_conf.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/stdio.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/_ansi.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/newlib.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/_newlib_version.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/sys/config.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/machine/ieeefp.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/sys/features.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/sys/cdefs.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/machine/_default_types.h \
+  D:/stm32_DK/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/10.3.1/include/stddef.h \
+  D:/stm32_DK/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/10.3.1/include/stdarg.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/sys/reent.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/_ansi.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/sys/_types.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/machine/_types.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/sys/lock.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/sys/types.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/sys/_stdint.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/machine/endian.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/machine/_endian.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/sys/select.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/sys/_sigset.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/sys/_timeval.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/sys/timespec.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/sys/_timespec.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/sys/_pthreadtypes.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/sys/sched.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/machine/types.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/sys/stdio.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/stdlib.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/machine/stdlib.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/alloca.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/string.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/sys/_locale.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/strings.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/sys/string.h \
+  ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h \
+  ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f411xe.h \
+  ../Drivers/CMSIS/Include/core_cm4.h \
+  D:/stm32_DK/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/10.3.1/include/stdint.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/stdint.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/sys/_intsup.h \
+  ../Drivers/CMSIS/Include/cmsis_version.h \
+  ../Drivers/CMSIS/Include/cmsis_compiler.h \
+  ../Drivers/CMSIS/Include/cmsis_gcc.h \
+  ../Drivers/CMSIS/Include/mpu_armv7.h \
+  ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/system_stm32f4xx.h \
+  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h \
+  ../Core/Inc/stm32f4xx_hal_conf.h \
+  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h \
+  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h \
+  ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h \
+  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h \
+  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h \
+  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio_ex.h \
+  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_exti.h \
+  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h \
+  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h \
+  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h \
+  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h \
+  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h \
+  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h \
+  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h \
+  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h \
+  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h \
+  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h \
+  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h \
+  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pcd.h \
+  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_usb.h \
+  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pcd_ex.h \
+  ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_def.h \
+  ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ioreq.h \
+  ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h \
+  ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ctlreq.h \
+  ../USB_DEVICE/App/usbd_desc.h \
+  ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_def.h \
+  ../Src/UserApp/common_inc.h \
+  ../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h \
+  ../Core/Inc/FreeRTOSConfig.h \
+  ../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h \
+  ../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h \
+  ../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h \
+  ../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/portmacro.h \
+  ../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h \
+  ../Middlewares/Third_Party/FreeRTOS/Source/include/task.h \
+  ../Middlewares/Third_Party/FreeRTOS/Source/include/list.h \
+  ../Core/Inc/main.h \
+  ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os.h \
+  ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.h \
+  ../Src/UserApp/freertos_inc.h \
+  ../Src/Bsp/utils/time_utils.h \
+  ../Core/Inc/gpio.h \
+  ../Core/Inc/main.h
+
+CMakeFiles/Odrive_protocol.elf.dir/USB_DEVICE/Target/usbd_conf.c.obj: ../USB_DEVICE/Target/usbd_conf.c \
+  ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h \
+  ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f411xe.h \
+  ../Drivers/CMSIS/Include/core_cm4.h \
+  D:/stm32_DK/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/10.3.1/include/stdint.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/stdint.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/machine/_default_types.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/sys/features.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/_newlib_version.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/sys/_intsup.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/sys/_stdint.h \
+  ../Drivers/CMSIS/Include/cmsis_version.h \
+  ../Drivers/CMSIS/Include/cmsis_compiler.h \
+  ../Drivers/CMSIS/Include/cmsis_gcc.h \
+  ../Drivers/CMSIS/Include/mpu_armv7.h \
+  ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/system_stm32f4xx.h \
+  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h \
+  ../Core/Inc/stm32f4xx_hal_conf.h \
+  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h \
+  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h \
+  ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h \
+  D:/stm32_DK/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/10.3.1/include/stddef.h \
+  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h \
+  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h \
+  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio_ex.h \
+  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_exti.h \
+  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h \
+  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h \
+  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h \
+  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h \
+  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h \
+  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h \
+  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h \
+  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h \
+  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h \
+  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h \
+  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h \
+  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pcd.h \
+  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_usb.h \
+  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pcd_ex.h \
+  ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_def.h \
+  ../USB_DEVICE/Target/usbd_conf.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/stdio.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/_ansi.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/newlib.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/sys/config.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/machine/ieeefp.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/sys/cdefs.h \
+  D:/stm32_DK/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/10.3.1/include/stdarg.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/sys/reent.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/_ansi.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/sys/_types.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/machine/_types.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/sys/lock.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/sys/types.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/machine/endian.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/machine/_endian.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/sys/select.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/sys/_sigset.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/sys/_timeval.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/sys/timespec.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/sys/_timespec.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/sys/_pthreadtypes.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/sys/sched.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/machine/types.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/sys/stdio.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/stdlib.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/machine/stdlib.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/alloca.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/string.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/sys/_locale.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/strings.h \
+  D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/sys/string.h \
+  ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h \
+  ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_def.h \
+  ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ioreq.h \
+  ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h \
+  ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ctlreq.h \
+  ../Core/Inc/main.h
 
 
 ../Core/Src/dma.c:
@@ -2117,6 +3995,8 @@ D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/sys/_intsup.h:
 ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h:
 
 ../Core/Inc/dma.h:
+
+D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/vector:
 
 ../Drivers/CMSIS/Include/cmsis_gcc.h:
 
@@ -2138,11 +4018,15 @@ D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/sys/config.h:
 
 ../Core/Inc/stm32f4xx_hal_conf.h:
 
+D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/string:
+
 ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/freertos_mpool.h:
 
 ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h:
 
 ../Middlewares/Third_Party/FreeRTOS/Source/include/task.h:
+
+D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/tr1/riemann_zeta.tcc:
 
 ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h:
 
@@ -2152,17 +4036,19 @@ D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/sys/config.h:
 
 D:/stm32_DK/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/10.3.1/include/stdint.h:
 
-../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h:
-
 ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h:
 
-D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/stdint.h:
+../Src/UserApp/freertos_inc.h:
 
-../USB_DEVICE/Target/usbd_conf.h:
+../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h:
+
+D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/stdint.h:
 
 D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/machine/_default_types.h:
 
 ../Core/Inc/gpio.h:
+
+D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/arm-none-eabi/thumb/v7e-m+fp/hard/bits/c++locale.h:
 
 ../Middlewares/Third_Party/FreeRTOS/Source/include/stream_buffer.h:
 
@@ -2172,13 +4058,21 @@ D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/_newlib_version.h:
 
 D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/sys/_stdint.h:
 
+../Drivers/CMSIS/Include/cmsis_compiler.h:
+
+../Src/Bsp/communication/communication.hpp:
+
 ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.h:
+
+D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/range_cmp.h:
+
+D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/stl_pair.h:
 
 ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h:
 
-../Drivers/CMSIS/Include/cmsis_compiler.h:
-
 ../Drivers/CMSIS/Include/mpu_armv7.h:
+
+D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/nested_exception.h:
 
 ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c:
 
@@ -2196,6 +4090,8 @@ D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/sys/_stdint.h:
 
 ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_def.h:
 
+D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/predefined_ops.h:
+
 D:/stm32_DK/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/10.3.1/include/stddef.h:
 
 ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h:
@@ -2203,6 +4099,8 @@ D:/stm32_DK/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/10.3.1/include/stddef.h:
 D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/strings.h:
 
 ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio_ex.h:
+
+D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/uses_allocator.h:
 
 ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h:
 
@@ -2215,6 +4113,8 @@ D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/strings.h:
 ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h:
 
 ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h:
+
+D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/tr1/beta_function.tcc:
 
 ../Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.c:
 
@@ -2244,17 +4144,25 @@ D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/machine/_endian.h:
 
 ../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h:
 
+D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/tuple:
+
 ../Middlewares/Third_Party/FreeRTOS/Source/include/list.h:
 
-../Core/Src/gpio.c:
+../Src/UserApp/common_inc.h:
 
-D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/_ansi.h:
+../Src/Bsp/utils/time_utils.h:
+
+../Core/Src/gpio.c:
 
 ../Core/Src/main.c:
 
 ../Core/Inc/usart.h:
 
+../USB_DEVICE/Target/usbd_conf.h:
+
 D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/stdio.h:
+
+D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/_ansi.h:
 
 D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/newlib.h:
 
@@ -2263,6 +4171,8 @@ D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/machine/ieeefp.h:
 D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/sys/cdefs.h:
 
 D:/stm32_DK/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/10.3.1/include/stdarg.h:
+
+../Src/Bsp/communication/ascii_processor.cpp:
 
 D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/sys/reent.h:
 
@@ -2284,9 +4194,15 @@ D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/sys/select.h:
 
 D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/sys/_sigset.h:
 
+D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/exception_ptr.h:
+
 D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/sys/_timeval.h:
 
+D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/optional:
+
 D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/sys/timespec.h:
+
+D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/debug/debug.h:
 
 ../Middlewares/Third_Party/FreeRTOS/Source/include/croutine.h:
 
@@ -2306,15 +4222,23 @@ D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/machine/stdlib.h:
 
 D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/alloca.h:
 
+D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/specfun.h:
+
 D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/string.h:
 
 D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/sys/_locale.h:
 
+D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/stringfwd.h:
+
 D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/sys/string.h:
+
+D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/tr1/bessel_function.tcc:
 
 ../Core/Src/syscalls.c:
 
 ../Core/Src/stm32f4xx_hal_msp.c:
+
+D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/limits:
 
 ../Core/Src/stm32f4xx_hal_timebase_tim.c:
 
@@ -2324,35 +4248,63 @@ D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/sys/string.h:
 
 D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/sys/stat.h:
 
+D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/clocale:
+
+D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/erase_if.h:
+
 D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/time.h:
+
+D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/cerrno:
 
 D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/machine/time.h:
 
+../Src/Bsp/communication/communication.cpp:
+
 D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/errno.h:
+
+../Src/3rdParty/fibre/cpp/include/fibre/cpp_utils.hpp:
 
 D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/sys/errno.h:
 
+../Src/Bsp/communication/interface_uart.cpp:
+
 D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/sys/signal.h:
+
+D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/cpp_type_traits.h:
 
 D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/sys/time.h:
 
 D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/machine/_time.h:
 
+D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/arm-none-eabi/thumb/v7e-m+fp/hard/bits/atomic_word.h:
+
 D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/sys/times.h:
+
+D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/node_handle.h:
 
 ../Core/Src/system_stm32f4xx.c:
 
+D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/string_view:
+
 ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c:
+
+D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/arm-none-eabi/thumb/v7e-m+fp/hard/bits/gthr.h:
 
 ../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc/usbd_cdc.h:
 
 ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c:
 
+D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/stl_algo.h:
+
 ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c:
+
+D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/stl_uninitialized.h:
 
 ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c:
 
 ../USB_DEVICE/App/usbd_cdc_if.h:
+
+D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/ext/new_allocator.h:
 
 ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c:
 
@@ -2363,6 +4315,8 @@ D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/sys/times.h:
 ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pcd.c:
 
 ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pcd_ex.c:
+
+../Src/UserApp/main.cpp:
 
 ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c:
 
@@ -2378,9 +4332,15 @@ D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/sys/times.h:
 
 ../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.c:
 
+D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/cstdlib:
+
 ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ioreq.h:
 
 ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ctlreq.h:
+
+D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/debug/assertions.h:
+
+../USB_DEVICE/App/usbd_desc.h:
 
 ../Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.c:
 
@@ -2390,7 +4350,13 @@ D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/sys/times.h:
 
 ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c:
 
+D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/concepts:
+
 ../Middlewares/Third_Party/FreeRTOS/Source/include/event_groups.h:
+
+D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/tr1/exp_integral.tcc:
+
+D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/atomic_base.h:
 
 ../Middlewares/Third_Party/FreeRTOS/Source/include/timers.h:
 
@@ -2398,13 +4364,19 @@ D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/sys/times.h:
 
 ../Middlewares/Third_Party/FreeRTOS/Source/include/queue.h:
 
+D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/new:
+
 ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/freertos_os2.h:
+
+D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/std_function.h:
 
 ../Middlewares/Third_Party/FreeRTOS/Source/croutine.c:
 
 ../Middlewares/Third_Party/FreeRTOS/Source/event_groups.c:
 
 ../Middlewares/Third_Party/FreeRTOS/Source/list.c:
+
+D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/arm-none-eabi/thumb/v7e-m+fp/hard/bits/c++config.h:
 
 ../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c:
 
@@ -2416,10 +4388,244 @@ D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/sys/times.h:
 
 ../Middlewares/Third_Party/FreeRTOS/Source/include/stack_macros.h:
 
+../Src/Bsp/utils/software_i2c/soft_i2c.h:
+
 ../Middlewares/Third_Party/FreeRTOS/Source/timers.c:
+
+../Src/3rdParty/fibre/cpp/protocol.cpp:
+
+D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/memory:
+
+D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/stl_iterator.h:
+
+D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/stl_algobase.h:
+
+D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/arm-none-eabi/thumb/v7e-m+fp/hard/bits/os_defines.h:
+
+D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/arm-none-eabi/thumb/v7e-m+fp/hard/bits/cpu_defines.h:
+
+D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/pstl/pstl_config.h:
+
+D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/functexcept.h:
+
+D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/ptr_traits.h:
+
+D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/exception_defines.h:
+
+D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/ext/type_traits.h:
+
+D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/ext/numeric_traits.h:
+
+D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/move.h:
+
+D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/stl_bvector.h:
+
+D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/type_traits:
+
+D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/stl_iterator_base_types.h:
+
+D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/stl_iterator_base_funcs.h:
+
+D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/concept_check.h:
+
+D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/allocator.h:
+
+D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/arm-none-eabi/thumb/v7e-m+fp/hard/bits/c++allocator.h:
+
+D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/exception:
+
+D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/exception.h:
+
+D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/cxxabi_init_exception.h:
+
+D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/typeinfo:
+
+D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/hash_bytes.h:
+
+D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/tr1/gamma.tcc:
+
+D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/memoryfwd.h:
+
+D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/stl_construct.h:
+
+D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/ext/alloc_traits.h:
+
+D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/alloc_traits.h:
+
+D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/stl_tempbuf.h:
+
+D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/stl_raw_storage_iter.h:
+
+D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/ranges_uninitialized.h:
+
+D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/iosfwd:
+
+D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/hashtable_policy.h:
+
+D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/postypes.h:
+
+D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/cwchar:
+
+D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/charconv.h:
+
+D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/wchar.h:
+
+D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/ext/atomicity.h:
+
+D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/arm-none-eabi/thumb/v7e-m+fp/hard/bits/gthr-default.h:
+
+D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/ext/concurrence.h:
+
+D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/stl_function.h:
+
+D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/backward/binders.h:
+
+D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/unique_ptr.h:
+
+D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/utility:
+
+D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/cctype:
+
+D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/stl_relops.h:
+
+D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/initializer_list:
+
+D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/array:
+
+D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/range_access.h:
+
+D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/iterator_concepts.h:
+
+D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/invoke.h:
+
+D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/functional_hash.h:
+
+D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/shared_ptr.h:
+
+D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/ext/string_conversions.h:
+
+D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/shared_ptr_base.h:
+
+D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/allocated_ptr.h:
+
+D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/refwrap.h:
+
+D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/ext/aligned_buffer.h:
+
+D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/shared_ptr_atomic.h:
+
+D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/atomic_lockfree_defines.h:
+
+D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/backward/auto_ptr.h:
+
+D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/cstdint:
+
+D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/pstl/glue_memory_defs.h:
+
+D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/pstl/execution_defs.h:
+
+D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/stdlib.h:
+
+D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/std_abs.h:
+
+../Src/3rdParty/fibre/cpp/include/fibre/protocol.hpp:
+
+D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/functional:
+
+D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/unordered_map:
+
+D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/hashtable.h:
+
+D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/enable_special_members.h:
+
+D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/unordered_map.h:
+
+D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/stl_vector.h:
+
+D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/vector.tcc:
+
+D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/algorithmfwd.h:
+
+D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/stl_heap.h:
+
+D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/uniform_int_dist.h:
+
+D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/cmath:
+
+D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/math.h:
+
+D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/tr1/special_function_util.h:
+
+D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/tr1/ell_integral.tcc:
+
+D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/tr1/hypergeometric.tcc:
+
+D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/tr1/legendre_function.tcc:
+
+D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/tr1/modified_bessel_func.tcc:
+
+D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/tr1/poly_hermite.tcc:
+
+D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/tr1/poly_laguerre.tcc:
+
+../Src/3rdParty/fibre/cpp/include/fibre/crc.hpp:
+
+D:/stm32_DK/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/10.3.1/include-fixed/limits.h:
+
+D:/stm32_DK/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/10.3.1/include-fixed/syslimits.h:
+
+D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/limits.h:
+
+D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/sys/syslimits.h:
+
+D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/unistd.h:
+
+D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/sys/unistd.h:
+
+D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/cstring:
+
+D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/cstdio:
+
+../Src/Bsp/communication/ascii_processor.hpp:
+
+D:/stm32_DK/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/10.3.1/include/stdbool.h:
+
+../Src/Bsp/communication/interface_usb.hpp:
+
+../Src/Bsp/communication/interface_uart.hpp:
+
+../Src/Bsp/communication/interface_usb.cpp:
+
+../Src/Bsp/utils/software_i2c/soft_i2c.c:
+
+../Src/Bsp/utils/time_utils.c:
+
+../Src/UserApp/protocols/ascii_protocol.cpp:
+
+D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/char_traits.h:
+
+D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/localefwd.h:
+
+D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/locale.h:
+
+D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/ctype.h:
+
+D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/ostream_insert.h:
+
+D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/cxxabi_forced.h:
+
+D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/basic_string.h:
+
+D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/string_view.tcc:
+
+D:/stm32_DK/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/bits/basic_string.tcc:
+
+../Src/UserApp/protocols/cmd_protocol.cpp:
 
 ../USB_DEVICE/App/usb_device.c:
 
-../USB_DEVICE/App/usbd_desc.h:
-
 ../USB_DEVICE/App/usbd_cdc_if.c:
+
+../USB_DEVICE/App/usbd_desc.c:
+
+../USB_DEVICE/Target/usbd_conf.c:

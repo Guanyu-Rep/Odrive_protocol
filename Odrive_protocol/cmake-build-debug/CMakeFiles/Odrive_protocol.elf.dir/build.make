@@ -670,10 +670,150 @@ CMakeFiles/Odrive_protocol.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/timer
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Odrive_protocol.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/timers.c.s"
 	D:\stm32_DK\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S E:\project\24-3-15-Odrive_protocol\Odrive_protocol\Middlewares\Third_Party\FreeRTOS\Source\timers.c -o CMakeFiles\Odrive_protocol.elf.dir\Middlewares\Third_Party\FreeRTOS\Source\timers.c.s
 
+CMakeFiles/Odrive_protocol.elf.dir/Src/3rdParty/fibre/cpp/protocol.cpp.obj: CMakeFiles/Odrive_protocol.elf.dir/flags.make
+CMakeFiles/Odrive_protocol.elf.dir/Src/3rdParty/fibre/cpp/protocol.cpp.obj: ../Src/3rdParty/fibre/cpp/protocol.cpp
+CMakeFiles/Odrive_protocol.elf.dir/Src/3rdParty/fibre/cpp/protocol.cpp.obj: CMakeFiles/Odrive_protocol.elf.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\project\24-3-15-Odrive_protocol\Odrive_protocol\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Building CXX object CMakeFiles/Odrive_protocol.elf.dir/Src/3rdParty/fibre/cpp/protocol.cpp.obj"
+	D:\stm32_DK\gcc-arm-none-eabi\bin\arm-none-eabi-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Odrive_protocol.elf.dir/Src/3rdParty/fibre/cpp/protocol.cpp.obj -MF CMakeFiles\Odrive_protocol.elf.dir\Src\3rdParty\fibre\cpp\protocol.cpp.obj.d -o CMakeFiles\Odrive_protocol.elf.dir\Src\3rdParty\fibre\cpp\protocol.cpp.obj -c E:\project\24-3-15-Odrive_protocol\Odrive_protocol\Src\3rdParty\fibre\cpp\protocol.cpp
+
+CMakeFiles/Odrive_protocol.elf.dir/Src/3rdParty/fibre/cpp/protocol.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Odrive_protocol.elf.dir/Src/3rdParty/fibre/cpp/protocol.cpp.i"
+	D:\stm32_DK\gcc-arm-none-eabi\bin\arm-none-eabi-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E E:\project\24-3-15-Odrive_protocol\Odrive_protocol\Src\3rdParty\fibre\cpp\protocol.cpp > CMakeFiles\Odrive_protocol.elf.dir\Src\3rdParty\fibre\cpp\protocol.cpp.i
+
+CMakeFiles/Odrive_protocol.elf.dir/Src/3rdParty/fibre/cpp/protocol.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Odrive_protocol.elf.dir/Src/3rdParty/fibre/cpp/protocol.cpp.s"
+	D:\stm32_DK\gcc-arm-none-eabi\bin\arm-none-eabi-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\project\24-3-15-Odrive_protocol\Odrive_protocol\Src\3rdParty\fibre\cpp\protocol.cpp -o CMakeFiles\Odrive_protocol.elf.dir\Src\3rdParty\fibre\cpp\protocol.cpp.s
+
+CMakeFiles/Odrive_protocol.elf.dir/Src/Bsp/communication/ascii_processor.cpp.obj: CMakeFiles/Odrive_protocol.elf.dir/flags.make
+CMakeFiles/Odrive_protocol.elf.dir/Src/Bsp/communication/ascii_processor.cpp.obj: ../Src/Bsp/communication/ascii_processor.cpp
+CMakeFiles/Odrive_protocol.elf.dir/Src/Bsp/communication/ascii_processor.cpp.obj: CMakeFiles/Odrive_protocol.elf.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\project\24-3-15-Odrive_protocol\Odrive_protocol\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_45) "Building CXX object CMakeFiles/Odrive_protocol.elf.dir/Src/Bsp/communication/ascii_processor.cpp.obj"
+	D:\stm32_DK\gcc-arm-none-eabi\bin\arm-none-eabi-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Odrive_protocol.elf.dir/Src/Bsp/communication/ascii_processor.cpp.obj -MF CMakeFiles\Odrive_protocol.elf.dir\Src\Bsp\communication\ascii_processor.cpp.obj.d -o CMakeFiles\Odrive_protocol.elf.dir\Src\Bsp\communication\ascii_processor.cpp.obj -c E:\project\24-3-15-Odrive_protocol\Odrive_protocol\Src\Bsp\communication\ascii_processor.cpp
+
+CMakeFiles/Odrive_protocol.elf.dir/Src/Bsp/communication/ascii_processor.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Odrive_protocol.elf.dir/Src/Bsp/communication/ascii_processor.cpp.i"
+	D:\stm32_DK\gcc-arm-none-eabi\bin\arm-none-eabi-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E E:\project\24-3-15-Odrive_protocol\Odrive_protocol\Src\Bsp\communication\ascii_processor.cpp > CMakeFiles\Odrive_protocol.elf.dir\Src\Bsp\communication\ascii_processor.cpp.i
+
+CMakeFiles/Odrive_protocol.elf.dir/Src/Bsp/communication/ascii_processor.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Odrive_protocol.elf.dir/Src/Bsp/communication/ascii_processor.cpp.s"
+	D:\stm32_DK\gcc-arm-none-eabi\bin\arm-none-eabi-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\project\24-3-15-Odrive_protocol\Odrive_protocol\Src\Bsp\communication\ascii_processor.cpp -o CMakeFiles\Odrive_protocol.elf.dir\Src\Bsp\communication\ascii_processor.cpp.s
+
+CMakeFiles/Odrive_protocol.elf.dir/Src/Bsp/communication/communication.cpp.obj: CMakeFiles/Odrive_protocol.elf.dir/flags.make
+CMakeFiles/Odrive_protocol.elf.dir/Src/Bsp/communication/communication.cpp.obj: ../Src/Bsp/communication/communication.cpp
+CMakeFiles/Odrive_protocol.elf.dir/Src/Bsp/communication/communication.cpp.obj: CMakeFiles/Odrive_protocol.elf.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\project\24-3-15-Odrive_protocol\Odrive_protocol\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_46) "Building CXX object CMakeFiles/Odrive_protocol.elf.dir/Src/Bsp/communication/communication.cpp.obj"
+	D:\stm32_DK\gcc-arm-none-eabi\bin\arm-none-eabi-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Odrive_protocol.elf.dir/Src/Bsp/communication/communication.cpp.obj -MF CMakeFiles\Odrive_protocol.elf.dir\Src\Bsp\communication\communication.cpp.obj.d -o CMakeFiles\Odrive_protocol.elf.dir\Src\Bsp\communication\communication.cpp.obj -c E:\project\24-3-15-Odrive_protocol\Odrive_protocol\Src\Bsp\communication\communication.cpp
+
+CMakeFiles/Odrive_protocol.elf.dir/Src/Bsp/communication/communication.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Odrive_protocol.elf.dir/Src/Bsp/communication/communication.cpp.i"
+	D:\stm32_DK\gcc-arm-none-eabi\bin\arm-none-eabi-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E E:\project\24-3-15-Odrive_protocol\Odrive_protocol\Src\Bsp\communication\communication.cpp > CMakeFiles\Odrive_protocol.elf.dir\Src\Bsp\communication\communication.cpp.i
+
+CMakeFiles/Odrive_protocol.elf.dir/Src/Bsp/communication/communication.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Odrive_protocol.elf.dir/Src/Bsp/communication/communication.cpp.s"
+	D:\stm32_DK\gcc-arm-none-eabi\bin\arm-none-eabi-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\project\24-3-15-Odrive_protocol\Odrive_protocol\Src\Bsp\communication\communication.cpp -o CMakeFiles\Odrive_protocol.elf.dir\Src\Bsp\communication\communication.cpp.s
+
+CMakeFiles/Odrive_protocol.elf.dir/Src/Bsp/communication/interface_uart.cpp.obj: CMakeFiles/Odrive_protocol.elf.dir/flags.make
+CMakeFiles/Odrive_protocol.elf.dir/Src/Bsp/communication/interface_uart.cpp.obj: ../Src/Bsp/communication/interface_uart.cpp
+CMakeFiles/Odrive_protocol.elf.dir/Src/Bsp/communication/interface_uart.cpp.obj: CMakeFiles/Odrive_protocol.elf.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\project\24-3-15-Odrive_protocol\Odrive_protocol\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_47) "Building CXX object CMakeFiles/Odrive_protocol.elf.dir/Src/Bsp/communication/interface_uart.cpp.obj"
+	D:\stm32_DK\gcc-arm-none-eabi\bin\arm-none-eabi-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Odrive_protocol.elf.dir/Src/Bsp/communication/interface_uart.cpp.obj -MF CMakeFiles\Odrive_protocol.elf.dir\Src\Bsp\communication\interface_uart.cpp.obj.d -o CMakeFiles\Odrive_protocol.elf.dir\Src\Bsp\communication\interface_uart.cpp.obj -c E:\project\24-3-15-Odrive_protocol\Odrive_protocol\Src\Bsp\communication\interface_uart.cpp
+
+CMakeFiles/Odrive_protocol.elf.dir/Src/Bsp/communication/interface_uart.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Odrive_protocol.elf.dir/Src/Bsp/communication/interface_uart.cpp.i"
+	D:\stm32_DK\gcc-arm-none-eabi\bin\arm-none-eabi-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E E:\project\24-3-15-Odrive_protocol\Odrive_protocol\Src\Bsp\communication\interface_uart.cpp > CMakeFiles\Odrive_protocol.elf.dir\Src\Bsp\communication\interface_uart.cpp.i
+
+CMakeFiles/Odrive_protocol.elf.dir/Src/Bsp/communication/interface_uart.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Odrive_protocol.elf.dir/Src/Bsp/communication/interface_uart.cpp.s"
+	D:\stm32_DK\gcc-arm-none-eabi\bin\arm-none-eabi-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\project\24-3-15-Odrive_protocol\Odrive_protocol\Src\Bsp\communication\interface_uart.cpp -o CMakeFiles\Odrive_protocol.elf.dir\Src\Bsp\communication\interface_uart.cpp.s
+
+CMakeFiles/Odrive_protocol.elf.dir/Src/Bsp/communication/interface_usb.cpp.obj: CMakeFiles/Odrive_protocol.elf.dir/flags.make
+CMakeFiles/Odrive_protocol.elf.dir/Src/Bsp/communication/interface_usb.cpp.obj: ../Src/Bsp/communication/interface_usb.cpp
+CMakeFiles/Odrive_protocol.elf.dir/Src/Bsp/communication/interface_usb.cpp.obj: CMakeFiles/Odrive_protocol.elf.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\project\24-3-15-Odrive_protocol\Odrive_protocol\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_48) "Building CXX object CMakeFiles/Odrive_protocol.elf.dir/Src/Bsp/communication/interface_usb.cpp.obj"
+	D:\stm32_DK\gcc-arm-none-eabi\bin\arm-none-eabi-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Odrive_protocol.elf.dir/Src/Bsp/communication/interface_usb.cpp.obj -MF CMakeFiles\Odrive_protocol.elf.dir\Src\Bsp\communication\interface_usb.cpp.obj.d -o CMakeFiles\Odrive_protocol.elf.dir\Src\Bsp\communication\interface_usb.cpp.obj -c E:\project\24-3-15-Odrive_protocol\Odrive_protocol\Src\Bsp\communication\interface_usb.cpp
+
+CMakeFiles/Odrive_protocol.elf.dir/Src/Bsp/communication/interface_usb.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Odrive_protocol.elf.dir/Src/Bsp/communication/interface_usb.cpp.i"
+	D:\stm32_DK\gcc-arm-none-eabi\bin\arm-none-eabi-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E E:\project\24-3-15-Odrive_protocol\Odrive_protocol\Src\Bsp\communication\interface_usb.cpp > CMakeFiles\Odrive_protocol.elf.dir\Src\Bsp\communication\interface_usb.cpp.i
+
+CMakeFiles/Odrive_protocol.elf.dir/Src/Bsp/communication/interface_usb.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Odrive_protocol.elf.dir/Src/Bsp/communication/interface_usb.cpp.s"
+	D:\stm32_DK\gcc-arm-none-eabi\bin\arm-none-eabi-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\project\24-3-15-Odrive_protocol\Odrive_protocol\Src\Bsp\communication\interface_usb.cpp -o CMakeFiles\Odrive_protocol.elf.dir\Src\Bsp\communication\interface_usb.cpp.s
+
+CMakeFiles/Odrive_protocol.elf.dir/Src/Bsp/utils/software_i2c/soft_i2c.c.obj: CMakeFiles/Odrive_protocol.elf.dir/flags.make
+CMakeFiles/Odrive_protocol.elf.dir/Src/Bsp/utils/software_i2c/soft_i2c.c.obj: ../Src/Bsp/utils/software_i2c/soft_i2c.c
+CMakeFiles/Odrive_protocol.elf.dir/Src/Bsp/utils/software_i2c/soft_i2c.c.obj: CMakeFiles/Odrive_protocol.elf.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\project\24-3-15-Odrive_protocol\Odrive_protocol\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_49) "Building C object CMakeFiles/Odrive_protocol.elf.dir/Src/Bsp/utils/software_i2c/soft_i2c.c.obj"
+	D:\stm32_DK\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Odrive_protocol.elf.dir/Src/Bsp/utils/software_i2c/soft_i2c.c.obj -MF CMakeFiles\Odrive_protocol.elf.dir\Src\Bsp\utils\software_i2c\soft_i2c.c.obj.d -o CMakeFiles\Odrive_protocol.elf.dir\Src\Bsp\utils\software_i2c\soft_i2c.c.obj -c E:\project\24-3-15-Odrive_protocol\Odrive_protocol\Src\Bsp\utils\software_i2c\soft_i2c.c
+
+CMakeFiles/Odrive_protocol.elf.dir/Src/Bsp/utils/software_i2c/soft_i2c.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Odrive_protocol.elf.dir/Src/Bsp/utils/software_i2c/soft_i2c.c.i"
+	D:\stm32_DK\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E E:\project\24-3-15-Odrive_protocol\Odrive_protocol\Src\Bsp\utils\software_i2c\soft_i2c.c > CMakeFiles\Odrive_protocol.elf.dir\Src\Bsp\utils\software_i2c\soft_i2c.c.i
+
+CMakeFiles/Odrive_protocol.elf.dir/Src/Bsp/utils/software_i2c/soft_i2c.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Odrive_protocol.elf.dir/Src/Bsp/utils/software_i2c/soft_i2c.c.s"
+	D:\stm32_DK\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S E:\project\24-3-15-Odrive_protocol\Odrive_protocol\Src\Bsp\utils\software_i2c\soft_i2c.c -o CMakeFiles\Odrive_protocol.elf.dir\Src\Bsp\utils\software_i2c\soft_i2c.c.s
+
+CMakeFiles/Odrive_protocol.elf.dir/Src/Bsp/utils/time_utils.c.obj: CMakeFiles/Odrive_protocol.elf.dir/flags.make
+CMakeFiles/Odrive_protocol.elf.dir/Src/Bsp/utils/time_utils.c.obj: ../Src/Bsp/utils/time_utils.c
+CMakeFiles/Odrive_protocol.elf.dir/Src/Bsp/utils/time_utils.c.obj: CMakeFiles/Odrive_protocol.elf.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\project\24-3-15-Odrive_protocol\Odrive_protocol\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_50) "Building C object CMakeFiles/Odrive_protocol.elf.dir/Src/Bsp/utils/time_utils.c.obj"
+	D:\stm32_DK\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Odrive_protocol.elf.dir/Src/Bsp/utils/time_utils.c.obj -MF CMakeFiles\Odrive_protocol.elf.dir\Src\Bsp\utils\time_utils.c.obj.d -o CMakeFiles\Odrive_protocol.elf.dir\Src\Bsp\utils\time_utils.c.obj -c E:\project\24-3-15-Odrive_protocol\Odrive_protocol\Src\Bsp\utils\time_utils.c
+
+CMakeFiles/Odrive_protocol.elf.dir/Src/Bsp/utils/time_utils.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Odrive_protocol.elf.dir/Src/Bsp/utils/time_utils.c.i"
+	D:\stm32_DK\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E E:\project\24-3-15-Odrive_protocol\Odrive_protocol\Src\Bsp\utils\time_utils.c > CMakeFiles\Odrive_protocol.elf.dir\Src\Bsp\utils\time_utils.c.i
+
+CMakeFiles/Odrive_protocol.elf.dir/Src/Bsp/utils/time_utils.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Odrive_protocol.elf.dir/Src/Bsp/utils/time_utils.c.s"
+	D:\stm32_DK\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S E:\project\24-3-15-Odrive_protocol\Odrive_protocol\Src\Bsp\utils\time_utils.c -o CMakeFiles\Odrive_protocol.elf.dir\Src\Bsp\utils\time_utils.c.s
+
+CMakeFiles/Odrive_protocol.elf.dir/Src/UserApp/main.cpp.obj: CMakeFiles/Odrive_protocol.elf.dir/flags.make
+CMakeFiles/Odrive_protocol.elf.dir/Src/UserApp/main.cpp.obj: ../Src/UserApp/main.cpp
+CMakeFiles/Odrive_protocol.elf.dir/Src/UserApp/main.cpp.obj: CMakeFiles/Odrive_protocol.elf.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\project\24-3-15-Odrive_protocol\Odrive_protocol\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_51) "Building CXX object CMakeFiles/Odrive_protocol.elf.dir/Src/UserApp/main.cpp.obj"
+	D:\stm32_DK\gcc-arm-none-eabi\bin\arm-none-eabi-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Odrive_protocol.elf.dir/Src/UserApp/main.cpp.obj -MF CMakeFiles\Odrive_protocol.elf.dir\Src\UserApp\main.cpp.obj.d -o CMakeFiles\Odrive_protocol.elf.dir\Src\UserApp\main.cpp.obj -c E:\project\24-3-15-Odrive_protocol\Odrive_protocol\Src\UserApp\main.cpp
+
+CMakeFiles/Odrive_protocol.elf.dir/Src/UserApp/main.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Odrive_protocol.elf.dir/Src/UserApp/main.cpp.i"
+	D:\stm32_DK\gcc-arm-none-eabi\bin\arm-none-eabi-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E E:\project\24-3-15-Odrive_protocol\Odrive_protocol\Src\UserApp\main.cpp > CMakeFiles\Odrive_protocol.elf.dir\Src\UserApp\main.cpp.i
+
+CMakeFiles/Odrive_protocol.elf.dir/Src/UserApp/main.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Odrive_protocol.elf.dir/Src/UserApp/main.cpp.s"
+	D:\stm32_DK\gcc-arm-none-eabi\bin\arm-none-eabi-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\project\24-3-15-Odrive_protocol\Odrive_protocol\Src\UserApp\main.cpp -o CMakeFiles\Odrive_protocol.elf.dir\Src\UserApp\main.cpp.s
+
+CMakeFiles/Odrive_protocol.elf.dir/Src/UserApp/protocols/ascii_protocol.cpp.obj: CMakeFiles/Odrive_protocol.elf.dir/flags.make
+CMakeFiles/Odrive_protocol.elf.dir/Src/UserApp/protocols/ascii_protocol.cpp.obj: ../Src/UserApp/protocols/ascii_protocol.cpp
+CMakeFiles/Odrive_protocol.elf.dir/Src/UserApp/protocols/ascii_protocol.cpp.obj: CMakeFiles/Odrive_protocol.elf.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\project\24-3-15-Odrive_protocol\Odrive_protocol\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_52) "Building CXX object CMakeFiles/Odrive_protocol.elf.dir/Src/UserApp/protocols/ascii_protocol.cpp.obj"
+	D:\stm32_DK\gcc-arm-none-eabi\bin\arm-none-eabi-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Odrive_protocol.elf.dir/Src/UserApp/protocols/ascii_protocol.cpp.obj -MF CMakeFiles\Odrive_protocol.elf.dir\Src\UserApp\protocols\ascii_protocol.cpp.obj.d -o CMakeFiles\Odrive_protocol.elf.dir\Src\UserApp\protocols\ascii_protocol.cpp.obj -c E:\project\24-3-15-Odrive_protocol\Odrive_protocol\Src\UserApp\protocols\ascii_protocol.cpp
+
+CMakeFiles/Odrive_protocol.elf.dir/Src/UserApp/protocols/ascii_protocol.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Odrive_protocol.elf.dir/Src/UserApp/protocols/ascii_protocol.cpp.i"
+	D:\stm32_DK\gcc-arm-none-eabi\bin\arm-none-eabi-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E E:\project\24-3-15-Odrive_protocol\Odrive_protocol\Src\UserApp\protocols\ascii_protocol.cpp > CMakeFiles\Odrive_protocol.elf.dir\Src\UserApp\protocols\ascii_protocol.cpp.i
+
+CMakeFiles/Odrive_protocol.elf.dir/Src/UserApp/protocols/ascii_protocol.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Odrive_protocol.elf.dir/Src/UserApp/protocols/ascii_protocol.cpp.s"
+	D:\stm32_DK\gcc-arm-none-eabi\bin\arm-none-eabi-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\project\24-3-15-Odrive_protocol\Odrive_protocol\Src\UserApp\protocols\ascii_protocol.cpp -o CMakeFiles\Odrive_protocol.elf.dir\Src\UserApp\protocols\ascii_protocol.cpp.s
+
+CMakeFiles/Odrive_protocol.elf.dir/Src/UserApp/protocols/cmd_protocol.cpp.obj: CMakeFiles/Odrive_protocol.elf.dir/flags.make
+CMakeFiles/Odrive_protocol.elf.dir/Src/UserApp/protocols/cmd_protocol.cpp.obj: ../Src/UserApp/protocols/cmd_protocol.cpp
+CMakeFiles/Odrive_protocol.elf.dir/Src/UserApp/protocols/cmd_protocol.cpp.obj: CMakeFiles/Odrive_protocol.elf.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\project\24-3-15-Odrive_protocol\Odrive_protocol\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_53) "Building CXX object CMakeFiles/Odrive_protocol.elf.dir/Src/UserApp/protocols/cmd_protocol.cpp.obj"
+	D:\stm32_DK\gcc-arm-none-eabi\bin\arm-none-eabi-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Odrive_protocol.elf.dir/Src/UserApp/protocols/cmd_protocol.cpp.obj -MF CMakeFiles\Odrive_protocol.elf.dir\Src\UserApp\protocols\cmd_protocol.cpp.obj.d -o CMakeFiles\Odrive_protocol.elf.dir\Src\UserApp\protocols\cmd_protocol.cpp.obj -c E:\project\24-3-15-Odrive_protocol\Odrive_protocol\Src\UserApp\protocols\cmd_protocol.cpp
+
+CMakeFiles/Odrive_protocol.elf.dir/Src/UserApp/protocols/cmd_protocol.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Odrive_protocol.elf.dir/Src/UserApp/protocols/cmd_protocol.cpp.i"
+	D:\stm32_DK\gcc-arm-none-eabi\bin\arm-none-eabi-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E E:\project\24-3-15-Odrive_protocol\Odrive_protocol\Src\UserApp\protocols\cmd_protocol.cpp > CMakeFiles\Odrive_protocol.elf.dir\Src\UserApp\protocols\cmd_protocol.cpp.i
+
+CMakeFiles/Odrive_protocol.elf.dir/Src/UserApp/protocols/cmd_protocol.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Odrive_protocol.elf.dir/Src/UserApp/protocols/cmd_protocol.cpp.s"
+	D:\stm32_DK\gcc-arm-none-eabi\bin\arm-none-eabi-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\project\24-3-15-Odrive_protocol\Odrive_protocol\Src\UserApp\protocols\cmd_protocol.cpp -o CMakeFiles\Odrive_protocol.elf.dir\Src\UserApp\protocols\cmd_protocol.cpp.s
+
 CMakeFiles/Odrive_protocol.elf.dir/USB_DEVICE/App/usb_device.c.obj: CMakeFiles/Odrive_protocol.elf.dir/flags.make
 CMakeFiles/Odrive_protocol.elf.dir/USB_DEVICE/App/usb_device.c.obj: ../USB_DEVICE/App/usb_device.c
 CMakeFiles/Odrive_protocol.elf.dir/USB_DEVICE/App/usb_device.c.obj: CMakeFiles/Odrive_protocol.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\project\24-3-15-Odrive_protocol\Odrive_protocol\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Building C object CMakeFiles/Odrive_protocol.elf.dir/USB_DEVICE/App/usb_device.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\project\24-3-15-Odrive_protocol\Odrive_protocol\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_54) "Building C object CMakeFiles/Odrive_protocol.elf.dir/USB_DEVICE/App/usb_device.c.obj"
 	D:\stm32_DK\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Odrive_protocol.elf.dir/USB_DEVICE/App/usb_device.c.obj -MF CMakeFiles\Odrive_protocol.elf.dir\USB_DEVICE\App\usb_device.c.obj.d -o CMakeFiles\Odrive_protocol.elf.dir\USB_DEVICE\App\usb_device.c.obj -c E:\project\24-3-15-Odrive_protocol\Odrive_protocol\USB_DEVICE\App\usb_device.c
 
 CMakeFiles/Odrive_protocol.elf.dir/USB_DEVICE/App/usb_device.c.i: cmake_force
@@ -687,7 +827,7 @@ CMakeFiles/Odrive_protocol.elf.dir/USB_DEVICE/App/usb_device.c.s: cmake_force
 CMakeFiles/Odrive_protocol.elf.dir/USB_DEVICE/App/usbd_cdc_if.c.obj: CMakeFiles/Odrive_protocol.elf.dir/flags.make
 CMakeFiles/Odrive_protocol.elf.dir/USB_DEVICE/App/usbd_cdc_if.c.obj: ../USB_DEVICE/App/usbd_cdc_if.c
 CMakeFiles/Odrive_protocol.elf.dir/USB_DEVICE/App/usbd_cdc_if.c.obj: CMakeFiles/Odrive_protocol.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\project\24-3-15-Odrive_protocol\Odrive_protocol\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_45) "Building C object CMakeFiles/Odrive_protocol.elf.dir/USB_DEVICE/App/usbd_cdc_if.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\project\24-3-15-Odrive_protocol\Odrive_protocol\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_55) "Building C object CMakeFiles/Odrive_protocol.elf.dir/USB_DEVICE/App/usbd_cdc_if.c.obj"
 	D:\stm32_DK\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Odrive_protocol.elf.dir/USB_DEVICE/App/usbd_cdc_if.c.obj -MF CMakeFiles\Odrive_protocol.elf.dir\USB_DEVICE\App\usbd_cdc_if.c.obj.d -o CMakeFiles\Odrive_protocol.elf.dir\USB_DEVICE\App\usbd_cdc_if.c.obj -c E:\project\24-3-15-Odrive_protocol\Odrive_protocol\USB_DEVICE\App\usbd_cdc_if.c
 
 CMakeFiles/Odrive_protocol.elf.dir/USB_DEVICE/App/usbd_cdc_if.c.i: cmake_force
@@ -701,7 +841,7 @@ CMakeFiles/Odrive_protocol.elf.dir/USB_DEVICE/App/usbd_cdc_if.c.s: cmake_force
 CMakeFiles/Odrive_protocol.elf.dir/USB_DEVICE/App/usbd_desc.c.obj: CMakeFiles/Odrive_protocol.elf.dir/flags.make
 CMakeFiles/Odrive_protocol.elf.dir/USB_DEVICE/App/usbd_desc.c.obj: ../USB_DEVICE/App/usbd_desc.c
 CMakeFiles/Odrive_protocol.elf.dir/USB_DEVICE/App/usbd_desc.c.obj: CMakeFiles/Odrive_protocol.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\project\24-3-15-Odrive_protocol\Odrive_protocol\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_46) "Building C object CMakeFiles/Odrive_protocol.elf.dir/USB_DEVICE/App/usbd_desc.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\project\24-3-15-Odrive_protocol\Odrive_protocol\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_56) "Building C object CMakeFiles/Odrive_protocol.elf.dir/USB_DEVICE/App/usbd_desc.c.obj"
 	D:\stm32_DK\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Odrive_protocol.elf.dir/USB_DEVICE/App/usbd_desc.c.obj -MF CMakeFiles\Odrive_protocol.elf.dir\USB_DEVICE\App\usbd_desc.c.obj.d -o CMakeFiles\Odrive_protocol.elf.dir\USB_DEVICE\App\usbd_desc.c.obj -c E:\project\24-3-15-Odrive_protocol\Odrive_protocol\USB_DEVICE\App\usbd_desc.c
 
 CMakeFiles/Odrive_protocol.elf.dir/USB_DEVICE/App/usbd_desc.c.i: cmake_force
@@ -715,7 +855,7 @@ CMakeFiles/Odrive_protocol.elf.dir/USB_DEVICE/App/usbd_desc.c.s: cmake_force
 CMakeFiles/Odrive_protocol.elf.dir/USB_DEVICE/Target/usbd_conf.c.obj: CMakeFiles/Odrive_protocol.elf.dir/flags.make
 CMakeFiles/Odrive_protocol.elf.dir/USB_DEVICE/Target/usbd_conf.c.obj: ../USB_DEVICE/Target/usbd_conf.c
 CMakeFiles/Odrive_protocol.elf.dir/USB_DEVICE/Target/usbd_conf.c.obj: CMakeFiles/Odrive_protocol.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\project\24-3-15-Odrive_protocol\Odrive_protocol\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_47) "Building C object CMakeFiles/Odrive_protocol.elf.dir/USB_DEVICE/Target/usbd_conf.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\project\24-3-15-Odrive_protocol\Odrive_protocol\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_57) "Building C object CMakeFiles/Odrive_protocol.elf.dir/USB_DEVICE/Target/usbd_conf.c.obj"
 	D:\stm32_DK\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Odrive_protocol.elf.dir/USB_DEVICE/Target/usbd_conf.c.obj -MF CMakeFiles\Odrive_protocol.elf.dir\USB_DEVICE\Target\usbd_conf.c.obj.d -o CMakeFiles\Odrive_protocol.elf.dir\USB_DEVICE\Target\usbd_conf.c.obj -c E:\project\24-3-15-Odrive_protocol\Odrive_protocol\USB_DEVICE\Target\usbd_conf.c
 
 CMakeFiles/Odrive_protocol.elf.dir/USB_DEVICE/Target/usbd_conf.c.i: cmake_force
@@ -728,7 +868,7 @@ CMakeFiles/Odrive_protocol.elf.dir/USB_DEVICE/Target/usbd_conf.c.s: cmake_force
 
 CMakeFiles/Odrive_protocol.elf.dir/startup/startup_stm32f411xe.s.obj: CMakeFiles/Odrive_protocol.elf.dir/flags.make
 CMakeFiles/Odrive_protocol.elf.dir/startup/startup_stm32f411xe.s.obj: ../startup/startup_stm32f411xe.s
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\project\24-3-15-Odrive_protocol\Odrive_protocol\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_48) "Building ASM object CMakeFiles/Odrive_protocol.elf.dir/startup/startup_stm32f411xe.s.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\project\24-3-15-Odrive_protocol\Odrive_protocol\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_58) "Building ASM object CMakeFiles/Odrive_protocol.elf.dir/startup/startup_stm32f411xe.s.obj"
 	D:\stm32_DK\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles\Odrive_protocol.elf.dir\startup\startup_stm32f411xe.s.obj -c E:\project\24-3-15-Odrive_protocol\Odrive_protocol\startup\startup_stm32f411xe.s
 
 CMakeFiles/Odrive_protocol.elf.dir/startup/startup_stm32f411xe.s.i: cmake_force
@@ -784,6 +924,16 @@ Odrive_protocol_elf_OBJECTS = \
 "CMakeFiles/Odrive_protocol.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.c.obj" \
 "CMakeFiles/Odrive_protocol.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj" \
 "CMakeFiles/Odrive_protocol.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/timers.c.obj" \
+"CMakeFiles/Odrive_protocol.elf.dir/Src/3rdParty/fibre/cpp/protocol.cpp.obj" \
+"CMakeFiles/Odrive_protocol.elf.dir/Src/Bsp/communication/ascii_processor.cpp.obj" \
+"CMakeFiles/Odrive_protocol.elf.dir/Src/Bsp/communication/communication.cpp.obj" \
+"CMakeFiles/Odrive_protocol.elf.dir/Src/Bsp/communication/interface_uart.cpp.obj" \
+"CMakeFiles/Odrive_protocol.elf.dir/Src/Bsp/communication/interface_usb.cpp.obj" \
+"CMakeFiles/Odrive_protocol.elf.dir/Src/Bsp/utils/software_i2c/soft_i2c.c.obj" \
+"CMakeFiles/Odrive_protocol.elf.dir/Src/Bsp/utils/time_utils.c.obj" \
+"CMakeFiles/Odrive_protocol.elf.dir/Src/UserApp/main.cpp.obj" \
+"CMakeFiles/Odrive_protocol.elf.dir/Src/UserApp/protocols/ascii_protocol.cpp.obj" \
+"CMakeFiles/Odrive_protocol.elf.dir/Src/UserApp/protocols/cmd_protocol.cpp.obj" \
 "CMakeFiles/Odrive_protocol.elf.dir/USB_DEVICE/App/usb_device.c.obj" \
 "CMakeFiles/Odrive_protocol.elf.dir/USB_DEVICE/App/usbd_cdc_if.c.obj" \
 "CMakeFiles/Odrive_protocol.elf.dir/USB_DEVICE/App/usbd_desc.c.obj" \
@@ -836,6 +986,16 @@ Odrive_protocol.elf: CMakeFiles/Odrive_protocol.elf.dir/Middlewares/Third_Party/
 Odrive_protocol.elf: CMakeFiles/Odrive_protocol.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.c.obj
 Odrive_protocol.elf: CMakeFiles/Odrive_protocol.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj
 Odrive_protocol.elf: CMakeFiles/Odrive_protocol.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/timers.c.obj
+Odrive_protocol.elf: CMakeFiles/Odrive_protocol.elf.dir/Src/3rdParty/fibre/cpp/protocol.cpp.obj
+Odrive_protocol.elf: CMakeFiles/Odrive_protocol.elf.dir/Src/Bsp/communication/ascii_processor.cpp.obj
+Odrive_protocol.elf: CMakeFiles/Odrive_protocol.elf.dir/Src/Bsp/communication/communication.cpp.obj
+Odrive_protocol.elf: CMakeFiles/Odrive_protocol.elf.dir/Src/Bsp/communication/interface_uart.cpp.obj
+Odrive_protocol.elf: CMakeFiles/Odrive_protocol.elf.dir/Src/Bsp/communication/interface_usb.cpp.obj
+Odrive_protocol.elf: CMakeFiles/Odrive_protocol.elf.dir/Src/Bsp/utils/software_i2c/soft_i2c.c.obj
+Odrive_protocol.elf: CMakeFiles/Odrive_protocol.elf.dir/Src/Bsp/utils/time_utils.c.obj
+Odrive_protocol.elf: CMakeFiles/Odrive_protocol.elf.dir/Src/UserApp/main.cpp.obj
+Odrive_protocol.elf: CMakeFiles/Odrive_protocol.elf.dir/Src/UserApp/protocols/ascii_protocol.cpp.obj
+Odrive_protocol.elf: CMakeFiles/Odrive_protocol.elf.dir/Src/UserApp/protocols/cmd_protocol.cpp.obj
 Odrive_protocol.elf: CMakeFiles/Odrive_protocol.elf.dir/USB_DEVICE/App/usb_device.c.obj
 Odrive_protocol.elf: CMakeFiles/Odrive_protocol.elf.dir/USB_DEVICE/App/usbd_cdc_if.c.obj
 Odrive_protocol.elf: CMakeFiles/Odrive_protocol.elf.dir/USB_DEVICE/App/usbd_desc.c.obj
@@ -844,7 +1004,7 @@ Odrive_protocol.elf: CMakeFiles/Odrive_protocol.elf.dir/startup/startup_stm32f41
 Odrive_protocol.elf: CMakeFiles/Odrive_protocol.elf.dir/build.make
 Odrive_protocol.elf: CMakeFiles/Odrive_protocol.elf.dir/objects1.rsp
 Odrive_protocol.elf: CMakeFiles/Odrive_protocol.elf.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=E:\project\24-3-15-Odrive_protocol\Odrive_protocol\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_49) "Linking C executable Odrive_protocol.elf"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=E:\project\24-3-15-Odrive_protocol\Odrive_protocol\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_59) "Linking CXX executable Odrive_protocol.elf"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\Odrive_protocol.elf.dir\link.txt --verbose=$(VERBOSE)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Building E:/project/24-3-15-Odrive_protocol/Odrive_protocol/cmake-build-debug/Odrive_protocol.hex"
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Building E:/project/24-3-15-Odrive_protocol/Odrive_protocol/cmake-build-debug/Odrive_protocol.bin"

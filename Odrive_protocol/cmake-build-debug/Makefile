@@ -1160,6 +1160,246 @@ Middlewares/Third_Party/FreeRTOS/Source/timers.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Odrive_protocol.elf.dir\build.make CMakeFiles/Odrive_protocol.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/timers.c.s
 .PHONY : Middlewares/Third_Party/FreeRTOS/Source/timers.c.s
 
+Src/3rdParty/fibre/cpp/protocol.obj: Src/3rdParty/fibre/cpp/protocol.cpp.obj
+.PHONY : Src/3rdParty/fibre/cpp/protocol.obj
+
+# target to build an object file
+Src/3rdParty/fibre/cpp/protocol.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Odrive_protocol.elf.dir\build.make CMakeFiles/Odrive_protocol.elf.dir/Src/3rdParty/fibre/cpp/protocol.cpp.obj
+.PHONY : Src/3rdParty/fibre/cpp/protocol.cpp.obj
+
+Src/3rdParty/fibre/cpp/protocol.i: Src/3rdParty/fibre/cpp/protocol.cpp.i
+.PHONY : Src/3rdParty/fibre/cpp/protocol.i
+
+# target to preprocess a source file
+Src/3rdParty/fibre/cpp/protocol.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Odrive_protocol.elf.dir\build.make CMakeFiles/Odrive_protocol.elf.dir/Src/3rdParty/fibre/cpp/protocol.cpp.i
+.PHONY : Src/3rdParty/fibre/cpp/protocol.cpp.i
+
+Src/3rdParty/fibre/cpp/protocol.s: Src/3rdParty/fibre/cpp/protocol.cpp.s
+.PHONY : Src/3rdParty/fibre/cpp/protocol.s
+
+# target to generate assembly for a file
+Src/3rdParty/fibre/cpp/protocol.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Odrive_protocol.elf.dir\build.make CMakeFiles/Odrive_protocol.elf.dir/Src/3rdParty/fibre/cpp/protocol.cpp.s
+.PHONY : Src/3rdParty/fibre/cpp/protocol.cpp.s
+
+Src/Bsp/communication/ascii_processor.obj: Src/Bsp/communication/ascii_processor.cpp.obj
+.PHONY : Src/Bsp/communication/ascii_processor.obj
+
+# target to build an object file
+Src/Bsp/communication/ascii_processor.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Odrive_protocol.elf.dir\build.make CMakeFiles/Odrive_protocol.elf.dir/Src/Bsp/communication/ascii_processor.cpp.obj
+.PHONY : Src/Bsp/communication/ascii_processor.cpp.obj
+
+Src/Bsp/communication/ascii_processor.i: Src/Bsp/communication/ascii_processor.cpp.i
+.PHONY : Src/Bsp/communication/ascii_processor.i
+
+# target to preprocess a source file
+Src/Bsp/communication/ascii_processor.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Odrive_protocol.elf.dir\build.make CMakeFiles/Odrive_protocol.elf.dir/Src/Bsp/communication/ascii_processor.cpp.i
+.PHONY : Src/Bsp/communication/ascii_processor.cpp.i
+
+Src/Bsp/communication/ascii_processor.s: Src/Bsp/communication/ascii_processor.cpp.s
+.PHONY : Src/Bsp/communication/ascii_processor.s
+
+# target to generate assembly for a file
+Src/Bsp/communication/ascii_processor.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Odrive_protocol.elf.dir\build.make CMakeFiles/Odrive_protocol.elf.dir/Src/Bsp/communication/ascii_processor.cpp.s
+.PHONY : Src/Bsp/communication/ascii_processor.cpp.s
+
+Src/Bsp/communication/communication.obj: Src/Bsp/communication/communication.cpp.obj
+.PHONY : Src/Bsp/communication/communication.obj
+
+# target to build an object file
+Src/Bsp/communication/communication.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Odrive_protocol.elf.dir\build.make CMakeFiles/Odrive_protocol.elf.dir/Src/Bsp/communication/communication.cpp.obj
+.PHONY : Src/Bsp/communication/communication.cpp.obj
+
+Src/Bsp/communication/communication.i: Src/Bsp/communication/communication.cpp.i
+.PHONY : Src/Bsp/communication/communication.i
+
+# target to preprocess a source file
+Src/Bsp/communication/communication.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Odrive_protocol.elf.dir\build.make CMakeFiles/Odrive_protocol.elf.dir/Src/Bsp/communication/communication.cpp.i
+.PHONY : Src/Bsp/communication/communication.cpp.i
+
+Src/Bsp/communication/communication.s: Src/Bsp/communication/communication.cpp.s
+.PHONY : Src/Bsp/communication/communication.s
+
+# target to generate assembly for a file
+Src/Bsp/communication/communication.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Odrive_protocol.elf.dir\build.make CMakeFiles/Odrive_protocol.elf.dir/Src/Bsp/communication/communication.cpp.s
+.PHONY : Src/Bsp/communication/communication.cpp.s
+
+Src/Bsp/communication/interface_uart.obj: Src/Bsp/communication/interface_uart.cpp.obj
+.PHONY : Src/Bsp/communication/interface_uart.obj
+
+# target to build an object file
+Src/Bsp/communication/interface_uart.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Odrive_protocol.elf.dir\build.make CMakeFiles/Odrive_protocol.elf.dir/Src/Bsp/communication/interface_uart.cpp.obj
+.PHONY : Src/Bsp/communication/interface_uart.cpp.obj
+
+Src/Bsp/communication/interface_uart.i: Src/Bsp/communication/interface_uart.cpp.i
+.PHONY : Src/Bsp/communication/interface_uart.i
+
+# target to preprocess a source file
+Src/Bsp/communication/interface_uart.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Odrive_protocol.elf.dir\build.make CMakeFiles/Odrive_protocol.elf.dir/Src/Bsp/communication/interface_uart.cpp.i
+.PHONY : Src/Bsp/communication/interface_uart.cpp.i
+
+Src/Bsp/communication/interface_uart.s: Src/Bsp/communication/interface_uart.cpp.s
+.PHONY : Src/Bsp/communication/interface_uart.s
+
+# target to generate assembly for a file
+Src/Bsp/communication/interface_uart.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Odrive_protocol.elf.dir\build.make CMakeFiles/Odrive_protocol.elf.dir/Src/Bsp/communication/interface_uart.cpp.s
+.PHONY : Src/Bsp/communication/interface_uart.cpp.s
+
+Src/Bsp/communication/interface_usb.obj: Src/Bsp/communication/interface_usb.cpp.obj
+.PHONY : Src/Bsp/communication/interface_usb.obj
+
+# target to build an object file
+Src/Bsp/communication/interface_usb.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Odrive_protocol.elf.dir\build.make CMakeFiles/Odrive_protocol.elf.dir/Src/Bsp/communication/interface_usb.cpp.obj
+.PHONY : Src/Bsp/communication/interface_usb.cpp.obj
+
+Src/Bsp/communication/interface_usb.i: Src/Bsp/communication/interface_usb.cpp.i
+.PHONY : Src/Bsp/communication/interface_usb.i
+
+# target to preprocess a source file
+Src/Bsp/communication/interface_usb.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Odrive_protocol.elf.dir\build.make CMakeFiles/Odrive_protocol.elf.dir/Src/Bsp/communication/interface_usb.cpp.i
+.PHONY : Src/Bsp/communication/interface_usb.cpp.i
+
+Src/Bsp/communication/interface_usb.s: Src/Bsp/communication/interface_usb.cpp.s
+.PHONY : Src/Bsp/communication/interface_usb.s
+
+# target to generate assembly for a file
+Src/Bsp/communication/interface_usb.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Odrive_protocol.elf.dir\build.make CMakeFiles/Odrive_protocol.elf.dir/Src/Bsp/communication/interface_usb.cpp.s
+.PHONY : Src/Bsp/communication/interface_usb.cpp.s
+
+Src/Bsp/utils/software_i2c/soft_i2c.obj: Src/Bsp/utils/software_i2c/soft_i2c.c.obj
+.PHONY : Src/Bsp/utils/software_i2c/soft_i2c.obj
+
+# target to build an object file
+Src/Bsp/utils/software_i2c/soft_i2c.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Odrive_protocol.elf.dir\build.make CMakeFiles/Odrive_protocol.elf.dir/Src/Bsp/utils/software_i2c/soft_i2c.c.obj
+.PHONY : Src/Bsp/utils/software_i2c/soft_i2c.c.obj
+
+Src/Bsp/utils/software_i2c/soft_i2c.i: Src/Bsp/utils/software_i2c/soft_i2c.c.i
+.PHONY : Src/Bsp/utils/software_i2c/soft_i2c.i
+
+# target to preprocess a source file
+Src/Bsp/utils/software_i2c/soft_i2c.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Odrive_protocol.elf.dir\build.make CMakeFiles/Odrive_protocol.elf.dir/Src/Bsp/utils/software_i2c/soft_i2c.c.i
+.PHONY : Src/Bsp/utils/software_i2c/soft_i2c.c.i
+
+Src/Bsp/utils/software_i2c/soft_i2c.s: Src/Bsp/utils/software_i2c/soft_i2c.c.s
+.PHONY : Src/Bsp/utils/software_i2c/soft_i2c.s
+
+# target to generate assembly for a file
+Src/Bsp/utils/software_i2c/soft_i2c.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Odrive_protocol.elf.dir\build.make CMakeFiles/Odrive_protocol.elf.dir/Src/Bsp/utils/software_i2c/soft_i2c.c.s
+.PHONY : Src/Bsp/utils/software_i2c/soft_i2c.c.s
+
+Src/Bsp/utils/time_utils.obj: Src/Bsp/utils/time_utils.c.obj
+.PHONY : Src/Bsp/utils/time_utils.obj
+
+# target to build an object file
+Src/Bsp/utils/time_utils.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Odrive_protocol.elf.dir\build.make CMakeFiles/Odrive_protocol.elf.dir/Src/Bsp/utils/time_utils.c.obj
+.PHONY : Src/Bsp/utils/time_utils.c.obj
+
+Src/Bsp/utils/time_utils.i: Src/Bsp/utils/time_utils.c.i
+.PHONY : Src/Bsp/utils/time_utils.i
+
+# target to preprocess a source file
+Src/Bsp/utils/time_utils.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Odrive_protocol.elf.dir\build.make CMakeFiles/Odrive_protocol.elf.dir/Src/Bsp/utils/time_utils.c.i
+.PHONY : Src/Bsp/utils/time_utils.c.i
+
+Src/Bsp/utils/time_utils.s: Src/Bsp/utils/time_utils.c.s
+.PHONY : Src/Bsp/utils/time_utils.s
+
+# target to generate assembly for a file
+Src/Bsp/utils/time_utils.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Odrive_protocol.elf.dir\build.make CMakeFiles/Odrive_protocol.elf.dir/Src/Bsp/utils/time_utils.c.s
+.PHONY : Src/Bsp/utils/time_utils.c.s
+
+Src/UserApp/main.obj: Src/UserApp/main.cpp.obj
+.PHONY : Src/UserApp/main.obj
+
+# target to build an object file
+Src/UserApp/main.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Odrive_protocol.elf.dir\build.make CMakeFiles/Odrive_protocol.elf.dir/Src/UserApp/main.cpp.obj
+.PHONY : Src/UserApp/main.cpp.obj
+
+Src/UserApp/main.i: Src/UserApp/main.cpp.i
+.PHONY : Src/UserApp/main.i
+
+# target to preprocess a source file
+Src/UserApp/main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Odrive_protocol.elf.dir\build.make CMakeFiles/Odrive_protocol.elf.dir/Src/UserApp/main.cpp.i
+.PHONY : Src/UserApp/main.cpp.i
+
+Src/UserApp/main.s: Src/UserApp/main.cpp.s
+.PHONY : Src/UserApp/main.s
+
+# target to generate assembly for a file
+Src/UserApp/main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Odrive_protocol.elf.dir\build.make CMakeFiles/Odrive_protocol.elf.dir/Src/UserApp/main.cpp.s
+.PHONY : Src/UserApp/main.cpp.s
+
+Src/UserApp/protocols/ascii_protocol.obj: Src/UserApp/protocols/ascii_protocol.cpp.obj
+.PHONY : Src/UserApp/protocols/ascii_protocol.obj
+
+# target to build an object file
+Src/UserApp/protocols/ascii_protocol.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Odrive_protocol.elf.dir\build.make CMakeFiles/Odrive_protocol.elf.dir/Src/UserApp/protocols/ascii_protocol.cpp.obj
+.PHONY : Src/UserApp/protocols/ascii_protocol.cpp.obj
+
+Src/UserApp/protocols/ascii_protocol.i: Src/UserApp/protocols/ascii_protocol.cpp.i
+.PHONY : Src/UserApp/protocols/ascii_protocol.i
+
+# target to preprocess a source file
+Src/UserApp/protocols/ascii_protocol.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Odrive_protocol.elf.dir\build.make CMakeFiles/Odrive_protocol.elf.dir/Src/UserApp/protocols/ascii_protocol.cpp.i
+.PHONY : Src/UserApp/protocols/ascii_protocol.cpp.i
+
+Src/UserApp/protocols/ascii_protocol.s: Src/UserApp/protocols/ascii_protocol.cpp.s
+.PHONY : Src/UserApp/protocols/ascii_protocol.s
+
+# target to generate assembly for a file
+Src/UserApp/protocols/ascii_protocol.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Odrive_protocol.elf.dir\build.make CMakeFiles/Odrive_protocol.elf.dir/Src/UserApp/protocols/ascii_protocol.cpp.s
+.PHONY : Src/UserApp/protocols/ascii_protocol.cpp.s
+
+Src/UserApp/protocols/cmd_protocol.obj: Src/UserApp/protocols/cmd_protocol.cpp.obj
+.PHONY : Src/UserApp/protocols/cmd_protocol.obj
+
+# target to build an object file
+Src/UserApp/protocols/cmd_protocol.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Odrive_protocol.elf.dir\build.make CMakeFiles/Odrive_protocol.elf.dir/Src/UserApp/protocols/cmd_protocol.cpp.obj
+.PHONY : Src/UserApp/protocols/cmd_protocol.cpp.obj
+
+Src/UserApp/protocols/cmd_protocol.i: Src/UserApp/protocols/cmd_protocol.cpp.i
+.PHONY : Src/UserApp/protocols/cmd_protocol.i
+
+# target to preprocess a source file
+Src/UserApp/protocols/cmd_protocol.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Odrive_protocol.elf.dir\build.make CMakeFiles/Odrive_protocol.elf.dir/Src/UserApp/protocols/cmd_protocol.cpp.i
+.PHONY : Src/UserApp/protocols/cmd_protocol.cpp.i
+
+Src/UserApp/protocols/cmd_protocol.s: Src/UserApp/protocols/cmd_protocol.cpp.s
+.PHONY : Src/UserApp/protocols/cmd_protocol.s
+
+# target to generate assembly for a file
+Src/UserApp/protocols/cmd_protocol.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Odrive_protocol.elf.dir\build.make CMakeFiles/Odrive_protocol.elf.dir/Src/UserApp/protocols/cmd_protocol.cpp.s
+.PHONY : Src/UserApp/protocols/cmd_protocol.cpp.s
+
 USB_DEVICE/App/usb_device.obj: USB_DEVICE/App/usb_device.c.obj
 .PHONY : USB_DEVICE/App/usb_device.obj
 
@@ -1402,6 +1642,36 @@ help:
 	@echo ... Middlewares/Third_Party/FreeRTOS/Source/timers.obj
 	@echo ... Middlewares/Third_Party/FreeRTOS/Source/timers.i
 	@echo ... Middlewares/Third_Party/FreeRTOS/Source/timers.s
+	@echo ... Src/3rdParty/fibre/cpp/protocol.obj
+	@echo ... Src/3rdParty/fibre/cpp/protocol.i
+	@echo ... Src/3rdParty/fibre/cpp/protocol.s
+	@echo ... Src/Bsp/communication/ascii_processor.obj
+	@echo ... Src/Bsp/communication/ascii_processor.i
+	@echo ... Src/Bsp/communication/ascii_processor.s
+	@echo ... Src/Bsp/communication/communication.obj
+	@echo ... Src/Bsp/communication/communication.i
+	@echo ... Src/Bsp/communication/communication.s
+	@echo ... Src/Bsp/communication/interface_uart.obj
+	@echo ... Src/Bsp/communication/interface_uart.i
+	@echo ... Src/Bsp/communication/interface_uart.s
+	@echo ... Src/Bsp/communication/interface_usb.obj
+	@echo ... Src/Bsp/communication/interface_usb.i
+	@echo ... Src/Bsp/communication/interface_usb.s
+	@echo ... Src/Bsp/utils/software_i2c/soft_i2c.obj
+	@echo ... Src/Bsp/utils/software_i2c/soft_i2c.i
+	@echo ... Src/Bsp/utils/software_i2c/soft_i2c.s
+	@echo ... Src/Bsp/utils/time_utils.obj
+	@echo ... Src/Bsp/utils/time_utils.i
+	@echo ... Src/Bsp/utils/time_utils.s
+	@echo ... Src/UserApp/main.obj
+	@echo ... Src/UserApp/main.i
+	@echo ... Src/UserApp/main.s
+	@echo ... Src/UserApp/protocols/ascii_protocol.obj
+	@echo ... Src/UserApp/protocols/ascii_protocol.i
+	@echo ... Src/UserApp/protocols/ascii_protocol.s
+	@echo ... Src/UserApp/protocols/cmd_protocol.obj
+	@echo ... Src/UserApp/protocols/cmd_protocol.i
+	@echo ... Src/UserApp/protocols/cmd_protocol.s
 	@echo ... USB_DEVICE/App/usb_device.obj
 	@echo ... USB_DEVICE/App/usb_device.i
 	@echo ... USB_DEVICE/App/usb_device.s

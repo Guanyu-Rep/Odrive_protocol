@@ -73,7 +73,6 @@ CMakeFiles/Odrive_protocol.elf.dir/USB_DEVICE/App/usb_device.c.obj: \
  d:\stm32_dk\gcc-arm-none-eabi\arm-none-eabi\include\sys\_locale.h \
  d:\stm32_dk\gcc-arm-none-eabi\arm-none-eabi\include\strings.h \
  d:\stm32_dk\gcc-arm-none-eabi\arm-none-eabi\include\sys\string.h \
- E:\project\24-3-15-Odrive_protocol\Odrive_protocol\Core\Inc/main.h \
  E:\project\24-3-15-Odrive_protocol\Odrive_protocol\Middlewares\ST\STM32_USB_Device_Library\Core\Inc/usbd_core.h \
  E:\project\24-3-15-Odrive_protocol\Odrive_protocol\Middlewares\ST\STM32_USB_Device_Library\Core\Inc/usbd_def.h \
  E:\project\24-3-15-Odrive_protocol\Odrive_protocol\Middlewares\ST\STM32_USB_Device_Library\Core\Inc/usbd_ioreq.h \
@@ -82,4 +81,5 @@ CMakeFiles/Odrive_protocol.elf.dir/USB_DEVICE/App/usb_device.c.obj: \
  E:\project\24-3-15-Odrive_protocol\Odrive_protocol\USB_DEVICE\App\usbd_desc.h \
  E:\project\24-3-15-Odrive_protocol\Odrive_protocol\Middlewares\ST\STM32_USB_Device_Library\Class\CDC\Inc/usbd_cdc.h \
  E:\project\24-3-15-Odrive_protocol\Odrive_protocol\Middlewares\ST\STM32_USB_Device_Library\Core\Inc/usbd_ioreq.h \
- E:\project\24-3-15-Odrive_protocol\Odrive_protocol\USB_DEVICE\App\usbd_cdc_if.h
+ E:\project\24-3-15-Odrive_protocol\Odrive_protocol\USB_DEVICE\App\usbd_cdc_if.h \
+ E:\project\24-3-15-Odrive_protocol\Odrive_protocol\Core\Inc/main.h

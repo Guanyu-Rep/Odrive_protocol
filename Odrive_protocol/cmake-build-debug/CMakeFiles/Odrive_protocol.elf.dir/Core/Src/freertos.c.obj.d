@@ -50,4 +50,10 @@ CMakeFiles/Odrive_protocol.elf.dir/Core/Src/freertos.c.obj: \
  E:\project\24-3-15-Odrive_protocol\Odrive_protocol\Drivers\STM32F4xx_HAL_Driver\Inc/stm32f4xx_ll_usb.h \
  E:\project\24-3-15-Odrive_protocol\Odrive_protocol\Drivers\STM32F4xx_HAL_Driver\Inc/stm32f4xx_hal_pcd_ex.h \
  E:\project\24-3-15-Odrive_protocol\Odrive_protocol\Middlewares\Third_Party\FreeRTOS\Source\CMSIS_RTOS_V2/cmsis_os.h \
- E:\project\24-3-15-Odrive_protocol\Odrive_protocol\Middlewares\Third_Party\FreeRTOS\Source\CMSIS_RTOS_V2/cmsis_os2.h
+ E:\project\24-3-15-Odrive_protocol\Odrive_protocol\Middlewares\Third_Party\FreeRTOS\Source\CMSIS_RTOS_V2/cmsis_os2.h \
+ E:\project\24-3-15-Odrive_protocol\Odrive_protocol\Src\UserApp/common_inc.h \
+ E:\project\24-3-15-Odrive_protocol\Odrive_protocol\Src\UserApp/freertos_inc.h \
+ E:\project\24-3-15-Odrive_protocol\Odrive_protocol\Src\Bsp\utils/time_utils.h \
+ E:\project\24-3-15-Odrive_protocol\Odrive_protocol\Core\Inc/gpio.h \
+ E:\project\24-3-15-Odrive_protocol\Odrive_protocol\Core\Inc/main.h \
+ E:\project\24-3-15-Odrive_protocol\Odrive_protocol\Src\Bsp\communication/communication.hpp

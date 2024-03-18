@@ -35,6 +35,13 @@ set(CMAKE_ASM_TARGET_INCLUDE_PATH
   "../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc"
   "../Drivers/CMSIS/Device/ST/STM32F4xx/Include"
   "../Drivers/CMSIS/Include"
+  "../Src"
+  "../Src/3rdParty/fibre/cpp/include"
+  "../Src/Bsp/communication"
+  "../Src/Bsp/utils"
+  "../Src/Bsp/utils/software_i2c"
+  "../Src/Bsp/utils/arm_math"
+  "../Src/UserApp"
   )
 
 # The set of dependency files which are needed:
@@ -82,10 +89,20 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "E:/project/24-3-15-Odrive_protocol/Odrive_protocol/Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.c" "CMakeFiles/Odrive_protocol.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.c.obj" "gcc" "CMakeFiles/Odrive_protocol.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.c.obj.d"
   "E:/project/24-3-15-Odrive_protocol/Odrive_protocol/Middlewares/Third_Party/FreeRTOS/Source/tasks.c" "CMakeFiles/Odrive_protocol.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj" "gcc" "CMakeFiles/Odrive_protocol.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj.d"
   "E:/project/24-3-15-Odrive_protocol/Odrive_protocol/Middlewares/Third_Party/FreeRTOS/Source/timers.c" "CMakeFiles/Odrive_protocol.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/timers.c.obj" "gcc" "CMakeFiles/Odrive_protocol.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/timers.c.obj.d"
+  "E:/project/24-3-15-Odrive_protocol/Odrive_protocol/Src/Bsp/utils/software_i2c/soft_i2c.c" "CMakeFiles/Odrive_protocol.elf.dir/Src/Bsp/utils/software_i2c/soft_i2c.c.obj" "gcc" "CMakeFiles/Odrive_protocol.elf.dir/Src/Bsp/utils/software_i2c/soft_i2c.c.obj.d"
+  "E:/project/24-3-15-Odrive_protocol/Odrive_protocol/Src/Bsp/utils/time_utils.c" "CMakeFiles/Odrive_protocol.elf.dir/Src/Bsp/utils/time_utils.c.obj" "gcc" "CMakeFiles/Odrive_protocol.elf.dir/Src/Bsp/utils/time_utils.c.obj.d"
   "E:/project/24-3-15-Odrive_protocol/Odrive_protocol/USB_DEVICE/App/usb_device.c" "CMakeFiles/Odrive_protocol.elf.dir/USB_DEVICE/App/usb_device.c.obj" "gcc" "CMakeFiles/Odrive_protocol.elf.dir/USB_DEVICE/App/usb_device.c.obj.d"
   "E:/project/24-3-15-Odrive_protocol/Odrive_protocol/USB_DEVICE/App/usbd_cdc_if.c" "CMakeFiles/Odrive_protocol.elf.dir/USB_DEVICE/App/usbd_cdc_if.c.obj" "gcc" "CMakeFiles/Odrive_protocol.elf.dir/USB_DEVICE/App/usbd_cdc_if.c.obj.d"
   "E:/project/24-3-15-Odrive_protocol/Odrive_protocol/USB_DEVICE/App/usbd_desc.c" "CMakeFiles/Odrive_protocol.elf.dir/USB_DEVICE/App/usbd_desc.c.obj" "gcc" "CMakeFiles/Odrive_protocol.elf.dir/USB_DEVICE/App/usbd_desc.c.obj.d"
   "E:/project/24-3-15-Odrive_protocol/Odrive_protocol/USB_DEVICE/Target/usbd_conf.c" "CMakeFiles/Odrive_protocol.elf.dir/USB_DEVICE/Target/usbd_conf.c.obj" "gcc" "CMakeFiles/Odrive_protocol.elf.dir/USB_DEVICE/Target/usbd_conf.c.obj.d"
+  "E:/project/24-3-15-Odrive_protocol/Odrive_protocol/Src/3rdParty/fibre/cpp/protocol.cpp" "CMakeFiles/Odrive_protocol.elf.dir/Src/3rdParty/fibre/cpp/protocol.cpp.obj" "gcc" "CMakeFiles/Odrive_protocol.elf.dir/Src/3rdParty/fibre/cpp/protocol.cpp.obj.d"
+  "E:/project/24-3-15-Odrive_protocol/Odrive_protocol/Src/Bsp/communication/ascii_processor.cpp" "CMakeFiles/Odrive_protocol.elf.dir/Src/Bsp/communication/ascii_processor.cpp.obj" "gcc" "CMakeFiles/Odrive_protocol.elf.dir/Src/Bsp/communication/ascii_processor.cpp.obj.d"
+  "E:/project/24-3-15-Odrive_protocol/Odrive_protocol/Src/Bsp/communication/communication.cpp" "CMakeFiles/Odrive_protocol.elf.dir/Src/Bsp/communication/communication.cpp.obj" "gcc" "CMakeFiles/Odrive_protocol.elf.dir/Src/Bsp/communication/communication.cpp.obj.d"
+  "E:/project/24-3-15-Odrive_protocol/Odrive_protocol/Src/Bsp/communication/interface_uart.cpp" "CMakeFiles/Odrive_protocol.elf.dir/Src/Bsp/communication/interface_uart.cpp.obj" "gcc" "CMakeFiles/Odrive_protocol.elf.dir/Src/Bsp/communication/interface_uart.cpp.obj.d"
+  "E:/project/24-3-15-Odrive_protocol/Odrive_protocol/Src/Bsp/communication/interface_usb.cpp" "CMakeFiles/Odrive_protocol.elf.dir/Src/Bsp/communication/interface_usb.cpp.obj" "gcc" "CMakeFiles/Odrive_protocol.elf.dir/Src/Bsp/communication/interface_usb.cpp.obj.d"
+  "E:/project/24-3-15-Odrive_protocol/Odrive_protocol/Src/UserApp/main.cpp" "CMakeFiles/Odrive_protocol.elf.dir/Src/UserApp/main.cpp.obj" "gcc" "CMakeFiles/Odrive_protocol.elf.dir/Src/UserApp/main.cpp.obj.d"
+  "E:/project/24-3-15-Odrive_protocol/Odrive_protocol/Src/UserApp/protocols/ascii_protocol.cpp" "CMakeFiles/Odrive_protocol.elf.dir/Src/UserApp/protocols/ascii_protocol.cpp.obj" "gcc" "CMakeFiles/Odrive_protocol.elf.dir/Src/UserApp/protocols/ascii_protocol.cpp.obj.d"
+  "E:/project/24-3-15-Odrive_protocol/Odrive_protocol/Src/UserApp/protocols/cmd_protocol.cpp" "CMakeFiles/Odrive_protocol.elf.dir/Src/UserApp/protocols/cmd_protocol.cpp.obj" "gcc" "CMakeFiles/Odrive_protocol.elf.dir/Src/UserApp/protocols/cmd_protocol.cpp.obj.d"
   )
 
 # Targets to which this target links.

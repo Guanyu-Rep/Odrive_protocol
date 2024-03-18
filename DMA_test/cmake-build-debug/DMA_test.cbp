@@ -1,0 +1,509 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="DMA_test"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="E:/project/24-3-15-Odrive_protocol/DMA_test/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.4/bin/mingw/bin/mingw32-make.exe -f &quot;E:/project/24-3-15-Odrive_protocol/DMA_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.4/bin/mingw/bin/mingw32-make.exe -f &quot;E:/project/24-3-15-Odrive_protocol/DMA_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.4/bin/mingw/bin/mingw32-make.exe -f &quot;E:/project/24-3-15-Odrive_protocol/DMA_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.4/bin/mingw/bin/mingw32-make.exe -f &quot;E:/project/24-3-15-Odrive_protocol/DMA_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="DMA_test.elf">
+				<Option output="E:/project/24-3-15-Odrive_protocol/DMA_test/cmake-build-debug/DMA_test.elf" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="E:/project/24-3-15-Odrive_protocol/DMA_test/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DARM_MATH_CM4"/>
+					<Add option="-DARM_MATH_MATRIX_CHECK"/>
+					<Add option="-DARM_MATH_ROUNDING"/>
+					<Add option="-DUSE_HAL_DRIVER"/>
+					<Add option="-DSTM32F411xE"/>
+					<Add directory="E:/project/24-3-15-Odrive_protocol/DMA_test/Core/Inc"/>
+					<Add directory="E:/project/24-3-15-Odrive_protocol/DMA_test/Drivers/STM32F4xx_HAL_Driver/Inc"/>
+					<Add directory="E:/project/24-3-15-Odrive_protocol/DMA_test/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy"/>
+					<Add directory="E:/project/24-3-15-Odrive_protocol/DMA_test/Middlewares/Third_Party/FreeRTOS/Source/include"/>
+					<Add directory="E:/project/24-3-15-Odrive_protocol/DMA_test/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2"/>
+					<Add directory="E:/project/24-3-15-Odrive_protocol/DMA_test/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F"/>
+					<Add directory="E:/project/24-3-15-Odrive_protocol/DMA_test/Drivers/CMSIS/Device/ST/STM32F4xx/Include"/>
+					<Add directory="E:/project/24-3-15-Odrive_protocol/DMA_test/Drivers/CMSIS/Include"/>
+					<Add directory="E:/project/24-3-15-Odrive_protocol/DMA_test/UserApp"/>
+					<Add directory="E:/project/24-3-15-Odrive_protocol/DMA_test/UserApp/communication"/>
+					<Add directory="E:/project/24-3-15-Odrive_protocol/DMA_test/UserApp/fibre/cpp/include"/>
+					<Add directory="d:\stm32_dk\gcc-arm-none-eabi\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1"/>
+					<Add directory="d:\stm32_dk\gcc-arm-none-eabi\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1/arm-none-eabi"/>
+					<Add directory="d:\stm32_dk\gcc-arm-none-eabi\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1/backward"/>
+					<Add directory="d:\stm32_dk\gcc-arm-none-eabi\bin\../lib/gcc/arm-none-eabi/10.3.1/include"/>
+					<Add directory="d:\stm32_dk\gcc-arm-none-eabi\bin\../lib/gcc/arm-none-eabi/10.3.1/include-fixed"/>
+					<Add directory="d:\stm32_dk\gcc-arm-none-eabi\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.4/bin/mingw/bin/mingw32-make.exe -f &quot;E:/project/24-3-15-Odrive_protocol/DMA_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 DMA_test.elf"/>
+					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.4/bin/mingw/bin/mingw32-make.exe -f &quot;E:/project/24-3-15-Odrive_protocol/DMA_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.4/bin/mingw/bin/mingw32-make.exe -f &quot;E:/project/24-3-15-Odrive_protocol/DMA_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.4/bin/mingw/bin/mingw32-make.exe -f &quot;E:/project/24-3-15-Odrive_protocol/DMA_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="DMA_test.elf/fast">
+				<Option output="E:/project/24-3-15-Odrive_protocol/DMA_test/cmake-build-debug/DMA_test.elf" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="E:/project/24-3-15-Odrive_protocol/DMA_test/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DARM_MATH_CM4"/>
+					<Add option="-DARM_MATH_MATRIX_CHECK"/>
+					<Add option="-DARM_MATH_ROUNDING"/>
+					<Add option="-DUSE_HAL_DRIVER"/>
+					<Add option="-DSTM32F411xE"/>
+					<Add directory="E:/project/24-3-15-Odrive_protocol/DMA_test/Core/Inc"/>
+					<Add directory="E:/project/24-3-15-Odrive_protocol/DMA_test/Drivers/STM32F4xx_HAL_Driver/Inc"/>
+					<Add directory="E:/project/24-3-15-Odrive_protocol/DMA_test/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy"/>
+					<Add directory="E:/project/24-3-15-Odrive_protocol/DMA_test/Middlewares/Third_Party/FreeRTOS/Source/include"/>
+					<Add directory="E:/project/24-3-15-Odrive_protocol/DMA_test/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2"/>
+					<Add directory="E:/project/24-3-15-Odrive_protocol/DMA_test/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F"/>
+					<Add directory="E:/project/24-3-15-Odrive_protocol/DMA_test/Drivers/CMSIS/Device/ST/STM32F4xx/Include"/>
+					<Add directory="E:/project/24-3-15-Odrive_protocol/DMA_test/Drivers/CMSIS/Include"/>
+					<Add directory="E:/project/24-3-15-Odrive_protocol/DMA_test/UserApp"/>
+					<Add directory="E:/project/24-3-15-Odrive_protocol/DMA_test/UserApp/communication"/>
+					<Add directory="E:/project/24-3-15-Odrive_protocol/DMA_test/UserApp/fibre/cpp/include"/>
+					<Add directory="d:\stm32_dk\gcc-arm-none-eabi\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1"/>
+					<Add directory="d:\stm32_dk\gcc-arm-none-eabi\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1/arm-none-eabi"/>
+					<Add directory="d:\stm32_dk\gcc-arm-none-eabi\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1/backward"/>
+					<Add directory="d:\stm32_dk\gcc-arm-none-eabi\bin\../lib/gcc/arm-none-eabi/10.3.1/include"/>
+					<Add directory="d:\stm32_dk\gcc-arm-none-eabi\bin\../lib/gcc/arm-none-eabi/10.3.1/include-fixed"/>
+					<Add directory="d:\stm32_dk\gcc-arm-none-eabi\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.4/bin/mingw/bin/mingw32-make.exe -f &quot;E:/project/24-3-15-Odrive_protocol/DMA_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 DMA_test.elf/fast"/>
+					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.4/bin/mingw/bin/mingw32-make.exe -f &quot;E:/project/24-3-15-Odrive_protocol/DMA_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.4/bin/mingw/bin/mingw32-make.exe -f &quot;E:/project/24-3-15-Odrive_protocol/DMA_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.4/bin/mingw/bin/mingw32-make.exe -f &quot;E:/project/24-3-15-Odrive_protocol/DMA_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="E:/project/24-3-15-Odrive_protocol/DMA_test/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.4/bin/mingw/bin/mingw32-make.exe -f &quot;E:/project/24-3-15-Odrive_protocol/DMA_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.4/bin/mingw/bin/mingw32-make.exe -f &quot;E:/project/24-3-15-Odrive_protocol/DMA_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.4/bin/mingw/bin/mingw32-make.exe -f &quot;E:/project/24-3-15-Odrive_protocol/DMA_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.4/bin/mingw/bin/mingw32-make.exe -f &quot;E:/project/24-3-15-Odrive_protocol/DMA_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="E:/project/24-3-15-Odrive_protocol/DMA_test/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.4/bin/mingw/bin/mingw32-make.exe -f &quot;E:/project/24-3-15-Odrive_protocol/DMA_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.4/bin/mingw/bin/mingw32-make.exe -f &quot;E:/project/24-3-15-Odrive_protocol/DMA_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.4/bin/mingw/bin/mingw32-make.exe -f &quot;E:/project/24-3-15-Odrive_protocol/DMA_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.4/bin/mingw/bin/mingw32-make.exe -f &quot;E:/project/24-3-15-Odrive_protocol/DMA_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="E:/project/24-3-15-Odrive_protocol/DMA_test/Core/Inc/FreeRTOSConfig.h">
+			<Option target="DMA_test.elf"/>
+		</Unit>
+		<Unit filename="E:/project/24-3-15-Odrive_protocol/DMA_test/Core/Inc/dma.h">
+			<Option target="DMA_test.elf"/>
+		</Unit>
+		<Unit filename="E:/project/24-3-15-Odrive_protocol/DMA_test/Core/Inc/gpio.h">
+			<Option target="DMA_test.elf"/>
+		</Unit>
+		<Unit filename="E:/project/24-3-15-Odrive_protocol/DMA_test/Core/Inc/main.h">
+			<Option target="DMA_test.elf"/>
+		</Unit>
+		<Unit filename="E:/project/24-3-15-Odrive_protocol/DMA_test/Core/Inc/stm32f4xx_hal_conf.h">
+			<Option target="DMA_test.elf"/>
+		</Unit>
+		<Unit filename="E:/project/24-3-15-Odrive_protocol/DMA_test/Core/Inc/stm32f4xx_it.h">
+			<Option target="DMA_test.elf"/>
+		</Unit>
+		<Unit filename="E:/project/24-3-15-Odrive_protocol/DMA_test/Core/Inc/usart.h">
+			<Option target="DMA_test.elf"/>
+		</Unit>
+		<Unit filename="E:/project/24-3-15-Odrive_protocol/DMA_test/Core/Src/dma.c">
+			<Option target="DMA_test.elf"/>
+		</Unit>
+		<Unit filename="E:/project/24-3-15-Odrive_protocol/DMA_test/Core/Src/freertos.c">
+			<Option target="DMA_test.elf"/>
+		</Unit>
+		<Unit filename="E:/project/24-3-15-Odrive_protocol/DMA_test/Core/Src/gpio.c">
+			<Option target="DMA_test.elf"/>
+		</Unit>
+		<Unit filename="E:/project/24-3-15-Odrive_protocol/DMA_test/Core/Src/main.c">
+			<Option target="DMA_test.elf"/>
+		</Unit>
+		<Unit filename="E:/project/24-3-15-Odrive_protocol/DMA_test/Core/Src/stm32f4xx_hal_msp.c">
+			<Option target="DMA_test.elf"/>
+		</Unit>
+		<Unit filename="E:/project/24-3-15-Odrive_protocol/DMA_test/Core/Src/stm32f4xx_hal_timebase_tim.c">
+			<Option target="DMA_test.elf"/>
+		</Unit>
+		<Unit filename="E:/project/24-3-15-Odrive_protocol/DMA_test/Core/Src/stm32f4xx_it.c">
+			<Option target="DMA_test.elf"/>
+		</Unit>
+		<Unit filename="E:/project/24-3-15-Odrive_protocol/DMA_test/Core/Src/syscalls.c">
+			<Option target="DMA_test.elf"/>
+		</Unit>
+		<Unit filename="E:/project/24-3-15-Odrive_protocol/DMA_test/Core/Src/system_stm32f4xx.c">
+			<Option target="DMA_test.elf"/>
+		</Unit>
+		<Unit filename="E:/project/24-3-15-Odrive_protocol/DMA_test/Core/Src/usart.c">
+			<Option target="DMA_test.elf"/>
+		</Unit>
+		<Unit filename="E:/project/24-3-15-Odrive_protocol/DMA_test/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f411xe.h">
+			<Option target="DMA_test.elf"/>
+		</Unit>
+		<Unit filename="E:/project/24-3-15-Odrive_protocol/DMA_test/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h">
+			<Option target="DMA_test.elf"/>
+		</Unit>
+		<Unit filename="E:/project/24-3-15-Odrive_protocol/DMA_test/Drivers/CMSIS/Device/ST/STM32F4xx/Include/system_stm32f4xx.h">
+			<Option target="DMA_test.elf"/>
+		</Unit>
+		<Unit filename="E:/project/24-3-15-Odrive_protocol/DMA_test/Drivers/CMSIS/Device/ST/STM32F4xx/LICENSE.txt">
+			<Option target="DMA_test.elf"/>
+		</Unit>
+		<Unit filename="E:/project/24-3-15-Odrive_protocol/DMA_test/Drivers/CMSIS/Include/cmsis_armcc.h">
+			<Option target="DMA_test.elf"/>
+		</Unit>
+		<Unit filename="E:/project/24-3-15-Odrive_protocol/DMA_test/Drivers/CMSIS/Include/cmsis_armclang.h">
+			<Option target="DMA_test.elf"/>
+		</Unit>
+		<Unit filename="E:/project/24-3-15-Odrive_protocol/DMA_test/Drivers/CMSIS/Include/cmsis_compiler.h">
+			<Option target="DMA_test.elf"/>
+		</Unit>
+		<Unit filename="E:/project/24-3-15-Odrive_protocol/DMA_test/Drivers/CMSIS/Include/cmsis_gcc.h">
+			<Option target="DMA_test.elf"/>
+		</Unit>
+		<Unit filename="E:/project/24-3-15-Odrive_protocol/DMA_test/Drivers/CMSIS/Include/cmsis_iccarm.h">
+			<Option target="DMA_test.elf"/>
+		</Unit>
+		<Unit filename="E:/project/24-3-15-Odrive_protocol/DMA_test/Drivers/CMSIS/Include/cmsis_version.h">
+			<Option target="DMA_test.elf"/>
+		</Unit>
+		<Unit filename="E:/project/24-3-15-Odrive_protocol/DMA_test/Drivers/CMSIS/Include/core_armv8mbl.h">
+			<Option target="DMA_test.elf"/>
+		</Unit>
+		<Unit filename="E:/project/24-3-15-Odrive_protocol/DMA_test/Drivers/CMSIS/Include/core_armv8mml.h">
+			<Option target="DMA_test.elf"/>
+		</Unit>
+		<Unit filename="E:/project/24-3-15-Odrive_protocol/DMA_test/Drivers/CMSIS/Include/core_cm0.h">
+			<Option target="DMA_test.elf"/>
+		</Unit>
+		<Unit filename="E:/project/24-3-15-Odrive_protocol/DMA_test/Drivers/CMSIS/Include/core_cm0plus.h">
+			<Option target="DMA_test.elf"/>
+		</Unit>
+		<Unit filename="E:/project/24-3-15-Odrive_protocol/DMA_test/Drivers/CMSIS/Include/core_cm1.h">
+			<Option target="DMA_test.elf"/>
+		</Unit>
+		<Unit filename="E:/project/24-3-15-Odrive_protocol/DMA_test/Drivers/CMSIS/Include/core_cm23.h">
+			<Option target="DMA_test.elf"/>
+		</Unit>
+		<Unit filename="E:/project/24-3-15-Odrive_protocol/DMA_test/Drivers/CMSIS/Include/core_cm3.h">
+			<Option target="DMA_test.elf"/>
+		</Unit>
+		<Unit filename="E:/project/24-3-15-Odrive_protocol/DMA_test/Drivers/CMSIS/Include/core_cm33.h">
+			<Option target="DMA_test.elf"/>
+		</Unit>
+		<Unit filename="E:/project/24-3-15-Odrive_protocol/DMA_test/Drivers/CMSIS/Include/core_cm4.h">
+			<Option target="DMA_test.elf"/>
+		</Unit>
+		<Unit filename="E:/project/24-3-15-Odrive_protocol/DMA_test/Drivers/CMSIS/Include/core_cm7.h">
+			<Option target="DMA_test.elf"/>
+		</Unit>
+		<Unit filename="E:/project/24-3-15-Odrive_protocol/DMA_test/Drivers/CMSIS/Include/core_sc000.h">
+			<Option target="DMA_test.elf"/>
+		</Unit>
+		<Unit filename="E:/project/24-3-15-Odrive_protocol/DMA_test/Drivers/CMSIS/Include/core_sc300.h">
+			<Option target="DMA_test.elf"/>
+		</Unit>
+		<Unit filename="E:/project/24-3-15-Odrive_protocol/DMA_test/Drivers/CMSIS/Include/mpu_armv7.h">
+			<Option target="DMA_test.elf"/>
+		</Unit>
+		<Unit filename="E:/project/24-3-15-Odrive_protocol/DMA_test/Drivers/CMSIS/Include/mpu_armv8.h">
+			<Option target="DMA_test.elf"/>
+		</Unit>
+		<Unit filename="E:/project/24-3-15-Odrive_protocol/DMA_test/Drivers/CMSIS/Include/tz_context.h">
+			<Option target="DMA_test.elf"/>
+		</Unit>
+		<Unit filename="E:/project/24-3-15-Odrive_protocol/DMA_test/Drivers/CMSIS/LICENSE.txt">
+			<Option target="DMA_test.elf"/>
+		</Unit>
+		<Unit filename="E:/project/24-3-15-Odrive_protocol/DMA_test/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h">
+			<Option target="DMA_test.elf"/>
+		</Unit>
+		<Unit filename="E:/project/24-3-15-Odrive_protocol/DMA_test/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h">
+			<Option target="DMA_test.elf"/>
+		</Unit>
+		<Unit filename="E:/project/24-3-15-Odrive_protocol/DMA_test/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h">
+			<Option target="DMA_test.elf"/>
+		</Unit>
+		<Unit filename="E:/project/24-3-15-Odrive_protocol/DMA_test/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h">
+			<Option target="DMA_test.elf"/>
+		</Unit>
+		<Unit filename="E:/project/24-3-15-Odrive_protocol/DMA_test/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h">
+			<Option target="DMA_test.elf"/>
+		</Unit>
+		<Unit filename="E:/project/24-3-15-Odrive_protocol/DMA_test/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h">
+			<Option target="DMA_test.elf"/>
+		</Unit>
+		<Unit filename="E:/project/24-3-15-Odrive_protocol/DMA_test/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_exti.h">
+			<Option target="DMA_test.elf"/>
+		</Unit>
+		<Unit filename="E:/project/24-3-15-Odrive_protocol/DMA_test/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h">
+			<Option target="DMA_test.elf"/>
+		</Unit>
+		<Unit filename="E:/project/24-3-15-Odrive_protocol/DMA_test/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h">
+			<Option target="DMA_test.elf"/>
+		</Unit>
+		<Unit filename="E:/project/24-3-15-Odrive_protocol/DMA_test/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h">
+			<Option target="DMA_test.elf"/>
+		</Unit>
+		<Unit filename="E:/project/24-3-15-Odrive_protocol/DMA_test/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h">
+			<Option target="DMA_test.elf"/>
+		</Unit>
+		<Unit filename="E:/project/24-3-15-Odrive_protocol/DMA_test/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio_ex.h">
+			<Option target="DMA_test.elf"/>
+		</Unit>
+		<Unit filename="E:/project/24-3-15-Odrive_protocol/DMA_test/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h">
+			<Option target="DMA_test.elf"/>
+		</Unit>
+		<Unit filename="E:/project/24-3-15-Odrive_protocol/DMA_test/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h">
+			<Option target="DMA_test.elf"/>
+		</Unit>
+		<Unit filename="E:/project/24-3-15-Odrive_protocol/DMA_test/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h">
+			<Option target="DMA_test.elf"/>
+		</Unit>
+		<Unit filename="E:/project/24-3-15-Odrive_protocol/DMA_test/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h">
+			<Option target="DMA_test.elf"/>
+		</Unit>
+		<Unit filename="E:/project/24-3-15-Odrive_protocol/DMA_test/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h">
+			<Option target="DMA_test.elf"/>
+		</Unit>
+		<Unit filename="E:/project/24-3-15-Odrive_protocol/DMA_test/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h">
+			<Option target="DMA_test.elf"/>
+		</Unit>
+		<Unit filename="E:/project/24-3-15-Odrive_protocol/DMA_test/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h">
+			<Option target="DMA_test.elf"/>
+		</Unit>
+		<Unit filename="E:/project/24-3-15-Odrive_protocol/DMA_test/Drivers/STM32F4xx_HAL_Driver/LICENSE.txt">
+			<Option target="DMA_test.elf"/>
+		</Unit>
+		<Unit filename="E:/project/24-3-15-Odrive_protocol/DMA_test/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c">
+			<Option target="DMA_test.elf"/>
+		</Unit>
+		<Unit filename="E:/project/24-3-15-Odrive_protocol/DMA_test/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c">
+			<Option target="DMA_test.elf"/>
+		</Unit>
+		<Unit filename="E:/project/24-3-15-Odrive_protocol/DMA_test/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c">
+			<Option target="DMA_test.elf"/>
+		</Unit>
+		<Unit filename="E:/project/24-3-15-Odrive_protocol/DMA_test/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c">
+			<Option target="DMA_test.elf"/>
+		</Unit>
+		<Unit filename="E:/project/24-3-15-Odrive_protocol/DMA_test/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c">
+			<Option target="DMA_test.elf"/>
+		</Unit>
+		<Unit filename="E:/project/24-3-15-Odrive_protocol/DMA_test/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c">
+			<Option target="DMA_test.elf"/>
+		</Unit>
+		<Unit filename="E:/project/24-3-15-Odrive_protocol/DMA_test/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c">
+			<Option target="DMA_test.elf"/>
+		</Unit>
+		<Unit filename="E:/project/24-3-15-Odrive_protocol/DMA_test/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.c">
+			<Option target="DMA_test.elf"/>
+		</Unit>
+		<Unit filename="E:/project/24-3-15-Odrive_protocol/DMA_test/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c">
+			<Option target="DMA_test.elf"/>
+		</Unit>
+		<Unit filename="E:/project/24-3-15-Odrive_protocol/DMA_test/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c">
+			<Option target="DMA_test.elf"/>
+		</Unit>
+		<Unit filename="E:/project/24-3-15-Odrive_protocol/DMA_test/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c">
+			<Option target="DMA_test.elf"/>
+		</Unit>
+		<Unit filename="E:/project/24-3-15-Odrive_protocol/DMA_test/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c">
+			<Option target="DMA_test.elf"/>
+		</Unit>
+		<Unit filename="E:/project/24-3-15-Odrive_protocol/DMA_test/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c">
+			<Option target="DMA_test.elf"/>
+		</Unit>
+		<Unit filename="E:/project/24-3-15-Odrive_protocol/DMA_test/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c">
+			<Option target="DMA_test.elf"/>
+		</Unit>
+		<Unit filename="E:/project/24-3-15-Odrive_protocol/DMA_test/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c">
+			<Option target="DMA_test.elf"/>
+		</Unit>
+		<Unit filename="E:/project/24-3-15-Odrive_protocol/DMA_test/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c">
+			<Option target="DMA_test.elf"/>
+		</Unit>
+		<Unit filename="E:/project/24-3-15-Odrive_protocol/DMA_test/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os.h">
+			<Option target="DMA_test.elf"/>
+		</Unit>
+		<Unit filename="E:/project/24-3-15-Odrive_protocol/DMA_test/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c">
+			<Option target="DMA_test.elf"/>
+		</Unit>
+		<Unit filename="E:/project/24-3-15-Odrive_protocol/DMA_test/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.h">
+			<Option target="DMA_test.elf"/>
+		</Unit>
+		<Unit filename="E:/project/24-3-15-Odrive_protocol/DMA_test/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/freertos_mpool.h">
+			<Option target="DMA_test.elf"/>
+		</Unit>
+		<Unit filename="E:/project/24-3-15-Odrive_protocol/DMA_test/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/freertos_os2.h">
+			<Option target="DMA_test.elf"/>
+		</Unit>
+		<Unit filename="E:/project/24-3-15-Odrive_protocol/DMA_test/Middlewares/Third_Party/FreeRTOS/Source/croutine.c">
+			<Option target="DMA_test.elf"/>
+		</Unit>
+		<Unit filename="E:/project/24-3-15-Odrive_protocol/DMA_test/Middlewares/Third_Party/FreeRTOS/Source/event_groups.c">
+			<Option target="DMA_test.elf"/>
+		</Unit>
+		<Unit filename="E:/project/24-3-15-Odrive_protocol/DMA_test/Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h">
+			<Option target="DMA_test.elf"/>
+		</Unit>
+		<Unit filename="E:/project/24-3-15-Odrive_protocol/DMA_test/Middlewares/Third_Party/FreeRTOS/Source/include/StackMacros.h">
+			<Option target="DMA_test.elf"/>
+		</Unit>
+		<Unit filename="E:/project/24-3-15-Odrive_protocol/DMA_test/Middlewares/Third_Party/FreeRTOS/Source/include/atomic.h">
+			<Option target="DMA_test.elf"/>
+		</Unit>
+		<Unit filename="E:/project/24-3-15-Odrive_protocol/DMA_test/Middlewares/Third_Party/FreeRTOS/Source/include/croutine.h">
+			<Option target="DMA_test.elf"/>
+		</Unit>
+		<Unit filename="E:/project/24-3-15-Odrive_protocol/DMA_test/Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h">
+			<Option target="DMA_test.elf"/>
+		</Unit>
+		<Unit filename="E:/project/24-3-15-Odrive_protocol/DMA_test/Middlewares/Third_Party/FreeRTOS/Source/include/event_groups.h">
+			<Option target="DMA_test.elf"/>
+		</Unit>
+		<Unit filename="E:/project/24-3-15-Odrive_protocol/DMA_test/Middlewares/Third_Party/FreeRTOS/Source/include/list.h">
+			<Option target="DMA_test.elf"/>
+		</Unit>
+		<Unit filename="E:/project/24-3-15-Odrive_protocol/DMA_test/Middlewares/Third_Party/FreeRTOS/Source/include/message_buffer.h">
+			<Option target="DMA_test.elf"/>
+		</Unit>
+		<Unit filename="E:/project/24-3-15-Odrive_protocol/DMA_test/Middlewares/Third_Party/FreeRTOS/Source/include/mpu_prototypes.h">
+			<Option target="DMA_test.elf"/>
+		</Unit>
+		<Unit filename="E:/project/24-3-15-Odrive_protocol/DMA_test/Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h">
+			<Option target="DMA_test.elf"/>
+		</Unit>
+		<Unit filename="E:/project/24-3-15-Odrive_protocol/DMA_test/Middlewares/Third_Party/FreeRTOS/Source/include/portable.h">
+			<Option target="DMA_test.elf"/>
+		</Unit>
+		<Unit filename="E:/project/24-3-15-Odrive_protocol/DMA_test/Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h">
+			<Option target="DMA_test.elf"/>
+		</Unit>
+		<Unit filename="E:/project/24-3-15-Odrive_protocol/DMA_test/Middlewares/Third_Party/FreeRTOS/Source/include/queue.h">
+			<Option target="DMA_test.elf"/>
+		</Unit>
+		<Unit filename="E:/project/24-3-15-Odrive_protocol/DMA_test/Middlewares/Third_Party/FreeRTOS/Source/include/semphr.h">
+			<Option target="DMA_test.elf"/>
+		</Unit>
+		<Unit filename="E:/project/24-3-15-Odrive_protocol/DMA_test/Middlewares/Third_Party/FreeRTOS/Source/include/stack_macros.h">
+			<Option target="DMA_test.elf"/>
+		</Unit>
+		<Unit filename="E:/project/24-3-15-Odrive_protocol/DMA_test/Middlewares/Third_Party/FreeRTOS/Source/include/stream_buffer.h">
+			<Option target="DMA_test.elf"/>
+		</Unit>
+		<Unit filename="E:/project/24-3-15-Odrive_protocol/DMA_test/Middlewares/Third_Party/FreeRTOS/Source/include/task.h">
+			<Option target="DMA_test.elf"/>
+		</Unit>
+		<Unit filename="E:/project/24-3-15-Odrive_protocol/DMA_test/Middlewares/Third_Party/FreeRTOS/Source/include/timers.h">
+			<Option target="DMA_test.elf"/>
+		</Unit>
+		<Unit filename="E:/project/24-3-15-Odrive_protocol/DMA_test/Middlewares/Third_Party/FreeRTOS/Source/list.c">
+			<Option target="DMA_test.elf"/>
+		</Unit>
+		<Unit filename="E:/project/24-3-15-Odrive_protocol/DMA_test/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c">
+			<Option target="DMA_test.elf"/>
+		</Unit>
+		<Unit filename="E:/project/24-3-15-Odrive_protocol/DMA_test/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/portmacro.h">
+			<Option target="DMA_test.elf"/>
+		</Unit>
+		<Unit filename="E:/project/24-3-15-Odrive_protocol/DMA_test/Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c">
+			<Option target="DMA_test.elf"/>
+		</Unit>
+		<Unit filename="E:/project/24-3-15-Odrive_protocol/DMA_test/Middlewares/Third_Party/FreeRTOS/Source/queue.c">
+			<Option target="DMA_test.elf"/>
+		</Unit>
+		<Unit filename="E:/project/24-3-15-Odrive_protocol/DMA_test/Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.c">
+			<Option target="DMA_test.elf"/>
+		</Unit>
+		<Unit filename="E:/project/24-3-15-Odrive_protocol/DMA_test/Middlewares/Third_Party/FreeRTOS/Source/tasks.c">
+			<Option target="DMA_test.elf"/>
+		</Unit>
+		<Unit filename="E:/project/24-3-15-Odrive_protocol/DMA_test/Middlewares/Third_Party/FreeRTOS/Source/timers.c">
+			<Option target="DMA_test.elf"/>
+		</Unit>
+		<Unit filename="E:/project/24-3-15-Odrive_protocol/DMA_test/STM32F411CEUx_FLASH.ld">
+			<Option target="DMA_test.elf"/>
+		</Unit>
+		<Unit filename="E:/project/24-3-15-Odrive_protocol/DMA_test/UserApp/ascii_protocol.cpp">
+			<Option target="DMA_test.elf"/>
+		</Unit>
+		<Unit filename="E:/project/24-3-15-Odrive_protocol/DMA_test/UserApp/common_inc.h">
+			<Option target="DMA_test.elf"/>
+		</Unit>
+		<Unit filename="E:/project/24-3-15-Odrive_protocol/DMA_test/UserApp/communication/ascii_processor.cpp">
+			<Option target="DMA_test.elf"/>
+		</Unit>
+		<Unit filename="E:/project/24-3-15-Odrive_protocol/DMA_test/UserApp/communication/ascii_processor.hpp">
+			<Option target="DMA_test.elf"/>
+		</Unit>
+		<Unit filename="E:/project/24-3-15-Odrive_protocol/DMA_test/UserApp/communication/communication.cpp">
+			<Option target="DMA_test.elf"/>
+		</Unit>
+		<Unit filename="E:/project/24-3-15-Odrive_protocol/DMA_test/UserApp/communication/communication.hpp">
+			<Option target="DMA_test.elf"/>
+		</Unit>
+		<Unit filename="E:/project/24-3-15-Odrive_protocol/DMA_test/UserApp/communication/interface_uart.cpp">
+			<Option target="DMA_test.elf"/>
+		</Unit>
+		<Unit filename="E:/project/24-3-15-Odrive_protocol/DMA_test/UserApp/communication/interface_uart.hpp">
+			<Option target="DMA_test.elf"/>
+		</Unit>
+		<Unit filename="E:/project/24-3-15-Odrive_protocol/DMA_test/UserApp/fibre/cpp/include/fibre/cpp_utils.hpp">
+			<Option target="DMA_test.elf"/>
+		</Unit>
+		<Unit filename="E:/project/24-3-15-Odrive_protocol/DMA_test/UserApp/fibre/cpp/include/fibre/crc.hpp">
+			<Option target="DMA_test.elf"/>
+		</Unit>
+		<Unit filename="E:/project/24-3-15-Odrive_protocol/DMA_test/UserApp/fibre/cpp/include/fibre/decoders.hpp">
+			<Option target="DMA_test.elf"/>
+		</Unit>
+		<Unit filename="E:/project/24-3-15-Odrive_protocol/DMA_test/UserApp/fibre/cpp/include/fibre/encoders.hpp">
+			<Option target="DMA_test.elf"/>
+		</Unit>
+		<Unit filename="E:/project/24-3-15-Odrive_protocol/DMA_test/UserApp/fibre/cpp/include/fibre/protocol.hpp">
+			<Option target="DMA_test.elf"/>
+		</Unit>
+		<Unit filename="E:/project/24-3-15-Odrive_protocol/DMA_test/UserApp/fibre/cpp/package.lua">
+			<Option target="DMA_test.elf"/>
+		</Unit>
+		<Unit filename="E:/project/24-3-15-Odrive_protocol/DMA_test/UserApp/fibre/cpp/protocol.cpp">
+			<Option target="DMA_test.elf"/>
+		</Unit>
+		<Unit filename="E:/project/24-3-15-Odrive_protocol/DMA_test/UserApp/main.cpp">
+			<Option target="DMA_test.elf"/>
+		</Unit>
+		<Unit filename="E:/project/24-3-15-Odrive_protocol/DMA_test/startup/startup_stm32f411xe.s">
+			<Option target="DMA_test.elf"/>
+		</Unit>
+		<Unit filename="E:/project/24-3-15-Odrive_protocol/DMA_test/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

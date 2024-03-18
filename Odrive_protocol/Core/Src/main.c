@@ -46,7 +46,9 @@
 /* Private variables ---------------------------------------------------------*/
 
 /* USER CODE BEGIN PV */
-
+uint64_t serialNumber;
+char serialNumberStr[13];
+__attribute__((section(".ccmram"))) uint8_t ucHeap[configTOTAL_HEAP_SIZE];
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -68,7 +70,22 @@ void MX_FREERTOS_Init(void);
 int main(void)
 {
   /* USER CODE BEGIN 1 */
+    // This procedure of building a USB serial number should be identical
+    // to the way the STM's built-in USB bootloader does it. This means
+    // that the device will have the same serial number in normal and DFU mode.
+    uint32_t uuid0 = *(uint32_t *) (UID_BASE + 0);
+    uint32_t uuid1 = *(uint32_t *) (UID_BASE + 4);
+    uint32_t uuid2 = *(uint32_t *) (UID_BASE + 8);
+    uint32_t uuid_mixed_part = uuid0 + uuid2;
+    serialNumber = ((uint64_t) uuid_mixed_part << 16) | (uint64_t) (uuid1 >> 16);
 
+    uint64_t val = serialNumber;
+    for (size_t i = 0; i < 12; ++i)
+    {
+        serialNumberStr[i] = "0123456789ABCDEF"[(val >> (48 - 4)) & 0xf];
+        val <<= 4;
+    }
+    serialNumberStr[12] = 0;
   /* USER CODE END 1 */
 
   /* MCU Configuration--------------------------------------------------------*/
@@ -77,7 +94,7 @@ int main(void)
   HAL_Init();
 
   /* USER CODE BEGIN Init */
-
+    HAL_RCC_DeInit();
   /* USER CODE END Init */
 
   /* Configure the system clock */

@@ -85,6 +85,26 @@ file(REMOVE_RECURSE
   "CMakeFiles/Odrive_protocol.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj.d"
   "CMakeFiles/Odrive_protocol.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/timers.c.obj"
   "CMakeFiles/Odrive_protocol.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/timers.c.obj.d"
+  "CMakeFiles/Odrive_protocol.elf.dir/Src/3rdParty/fibre/cpp/protocol.cpp.obj"
+  "CMakeFiles/Odrive_protocol.elf.dir/Src/3rdParty/fibre/cpp/protocol.cpp.obj.d"
+  "CMakeFiles/Odrive_protocol.elf.dir/Src/Bsp/communication/ascii_processor.cpp.obj"
+  "CMakeFiles/Odrive_protocol.elf.dir/Src/Bsp/communication/ascii_processor.cpp.obj.d"
+  "CMakeFiles/Odrive_protocol.elf.dir/Src/Bsp/communication/communication.cpp.obj"
+  "CMakeFiles/Odrive_protocol.elf.dir/Src/Bsp/communication/communication.cpp.obj.d"
+  "CMakeFiles/Odrive_protocol.elf.dir/Src/Bsp/communication/interface_uart.cpp.obj"
+  "CMakeFiles/Odrive_protocol.elf.dir/Src/Bsp/communication/interface_uart.cpp.obj.d"
+  "CMakeFiles/Odrive_protocol.elf.dir/Src/Bsp/communication/interface_usb.cpp.obj"
+  "CMakeFiles/Odrive_protocol.elf.dir/Src/Bsp/communication/interface_usb.cpp.obj.d"
+  "CMakeFiles/Odrive_protocol.elf.dir/Src/Bsp/utils/software_i2c/soft_i2c.c.obj"
+  "CMakeFiles/Odrive_protocol.elf.dir/Src/Bsp/utils/software_i2c/soft_i2c.c.obj.d"
+  "CMakeFiles/Odrive_protocol.elf.dir/Src/Bsp/utils/time_utils.c.obj"
+  "CMakeFiles/Odrive_protocol.elf.dir/Src/Bsp/utils/time_utils.c.obj.d"
+  "CMakeFiles/Odrive_protocol.elf.dir/Src/UserApp/main.cpp.obj"
+  "CMakeFiles/Odrive_protocol.elf.dir/Src/UserApp/main.cpp.obj.d"
+  "CMakeFiles/Odrive_protocol.elf.dir/Src/UserApp/protocols/ascii_protocol.cpp.obj"
+  "CMakeFiles/Odrive_protocol.elf.dir/Src/UserApp/protocols/ascii_protocol.cpp.obj.d"
+  "CMakeFiles/Odrive_protocol.elf.dir/Src/UserApp/protocols/cmd_protocol.cpp.obj"
+  "CMakeFiles/Odrive_protocol.elf.dir/Src/UserApp/protocols/cmd_protocol.cpp.obj.d"
   "CMakeFiles/Odrive_protocol.elf.dir/USB_DEVICE/App/usb_device.c.obj"
   "CMakeFiles/Odrive_protocol.elf.dir/USB_DEVICE/App/usb_device.c.obj.d"
   "CMakeFiles/Odrive_protocol.elf.dir/USB_DEVICE/App/usbd_cdc_if.c.obj"
@@ -100,6 +120,6 @@ file(REMOVE_RECURSE
 )
 
 # Per-language clean rules from dependency scanning.
-foreach(lang ASM C)
+foreach(lang ASM C CXX)
   include(CMakeFiles/Odrive_protocol.elf.dir/cmake_clean_${lang}.cmake OPTIONAL)
 endforeach()
