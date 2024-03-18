@@ -1,10 +1,5 @@
 #include "common_inc.h"
 
-// 5 User-Timers, can choose from htim7/htim10/htim11/htim13/htim14
-//Timer timerCtrlLoop(&htim7, 200);
-
-
-
 /* Thread Definitions -----------------------------------------------------*/
 osThreadId_t LEDTaskHandle;
 void LEDTask(void *pvParameters) {
@@ -14,7 +9,6 @@ void LEDTask(void *pvParameters) {
         osDelay(1000);
     }
 }
-
 
 /* Default Entry -------------------------------------------------------*/
 void Main(void)
@@ -32,7 +26,6 @@ void Main(void)
     };
     LEDTaskHandle = osThreadNew(LEDTask, nullptr, &LCDTask_attributes);
 
-    // System started, light switch-led up.
+    // System started.
     //Respond(*uart1StreamOutputPtr, "[sys] Heap remain: %d Bytes\n", xPortGetMinimumEverFreeHeapSize());
-//    pwm.SetDuty(PWM::CH_A1, 0.5);
 }

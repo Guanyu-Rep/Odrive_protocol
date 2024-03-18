@@ -46,7 +46,6 @@ public:
             if (processed_bytes)
                 *processed_bytes += chunk;
         }
-        //osSemaphoreRelease(sem_uart1_dma);
         return 0;
     }
 
@@ -185,8 +184,6 @@ const osThreadAttr_t uartServerTask_attributes = {
 
 void StartUartServer()
 {
-    //HAL_UART_Receive_IT(&huart1, (uint8_t *)&dma_rx_buffer[0],1);//调用中断接收函数;
-    //HAL_UART_Receive_IT(&huart2, (uint8_t *)&dma_rx_buffer[1],1);//调用中断接收函数;
     // DMA is set up to receive in a circular buffer forever.
     // We don't use interrupts to fetch the data, instead we periodically read
     // data out of the circular buffer into a parse buffer, controlled by a state machine
@@ -204,22 +201,8 @@ void HAL_UART_TxCpltCallback(UART_HandleTypeDef* huart)
 {
     if (huart->Instance == USART1) {
         osSemaphoreRelease(sem_uart1_dma);
-        //HAL_UART_Transmit_IT(&huart1, (uint8_t *) &dma_rx_buffer[0], 1);   //再开启接收中断（因为里面中断只会触发一次，因此需要再次开启）
     }
     else if (huart->Instance == USART2){
         osSemaphoreRelease(sem_uart2_dma);
-        //HAL_UART_Transmit_IT(&huart2, (uint8_t *) &dma_rx_buffer[1], 1);   //再开启接收中断（因为里面中断只会触发一次，因此需要再次开启）
     }
 }
-
-//void HAL_UART_RxCpltCallback(UART_HandleTypeDef* huart)
-//{
-//    if (huart->Instance == USART1) {
-//        //osSemaphoreRelease(sem_uart1_dma);
-//        HAL_UART_Receive_IT(&huart1, (uint8_t *) &dma_rx_buffer[0], 1);   //再开启接收中断（因为里面中断只会触发一次，因此需要再次开启）
-//    }
-//    else if (huart->Instance == USART2){
-//        //osSemaphoreRelease(sem_uart2_dma);
-//        HAL_UART_Receive_IT(&huart2, (uint8_t *) &dma_rx_buffer[1], 1);   //再开启接收中断（因为里面中断只会触发一次，因此需要再次开启）
-//    }
-//}
